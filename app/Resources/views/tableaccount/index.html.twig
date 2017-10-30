@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Tableaccounts list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Status</th>
+                <th>Createdate</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for tableAccount in tableAccounts %}
+            <tr>
+                <td><a href="{{ path('tableaccount_show', { 'id': tableAccount.id }) }}">{{ tableAccount.id }}</a></td>
+                <td>{{ tableAccount.name }}</td>
+                <td>{{ tableAccount.email }}</td>
+                <td>{{ tableAccount.phone }}</td>
+                <td>{{ tableAccount.username }}</td>
+                <td>{{ tableAccount.password }}</td>
+                <td>{% if tableAccount.status %}Yes{% else %}No{% endif %}</td>
+                <td>{% if tableAccount.createDate %}{{ tableAccount.createDate|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('tableaccount_show', { 'id': tableAccount.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('tableaccount_edit', { 'id': tableAccount.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('tableaccount_new') }}">Create a new tableAccount</a>
+        </li>
+    </ul>
+{% endblock %}

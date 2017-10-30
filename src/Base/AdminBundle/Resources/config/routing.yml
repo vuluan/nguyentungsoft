@@ -1,0 +1,19 @@
+base_admin_tableaccount:
+    resource: "@BaseAdminBundle/Resources/config/routing/tableaccount.xml"
+    prefix:   /tableaccount
+
+base_admin_account:
+    resource: "@BaseAdminBundle/Resources/config/routing/account.yml"
+    prefix:   /account
+
+base_admin_dashboard:
+  path: /
+  defaults: { _controller: BaseAdminBundle:Dashboard:index }
+
+base_admin_dashboard_login:
+  path: /login
+  defaults: { _controller: BaseAdminBundle:Dashboard:login }
+
+base_admin_dashboard_register:
+  path: /register
+  defaults: { _controller: BaseAdminBundle:Dashboard:register }

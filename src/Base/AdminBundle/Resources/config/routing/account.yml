@@ -1,0 +1,22 @@
+base_admin_account_index:
+  path: /
+  defaults: { _controller: BaseAdminBundle:Account:index }
+
+base_admin_account_create:
+  path: /create
+  defaults: { _controller: BaseAdminBundle:Account:create }
+  methods: [GET, POST]
+
+base_admin_account_edit:
+  path: /edit/{id}
+  defaults: { _controller: BaseAdminBundle:Account:edit }
+  methods: [GET, POST]
+  requirements:
+          id:  \d+
+
+base_admin_account_delete:
+  path: /delete/{id}
+  defaults: { _controller: BaseAdminBundle:Account:delete }
+  methods: [GET, POST]
+  requirements:
+          id:  \d+

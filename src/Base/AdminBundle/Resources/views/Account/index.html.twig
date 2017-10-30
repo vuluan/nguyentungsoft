@@ -1,0 +1,113 @@
+{# @var account \Base\AdminBundle\Entity\TableAccount #}
+
+{% extends '@BaseAdminBundle/Template/base-amaze-admin.html.twig' %}
+
+{% block right_content %}
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="content">
+                        <h4 class="title">Danh sách tài khoản</h4>
+                        <div class="toolbar">
+
+                        </div>
+                        <div class="material-datatables">
+                            <div id="datatables_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div id="datatables_filter" class="dataTables_filter">
+                                            <a class="btn btn-primary btn-round" href="{{ absolute_url(path('base_admin_account_create')) }}">
+                                                <i class="ti-plus"></i> Tạo tài khoản mới
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <table id="datatables" class="table table-hover" role="grid" aria-describedby="datatables_info">
+                                            <thead>
+                                                <tr role="row">
+                                                    <th class="" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1">Họ tên</th>
+                                                    <th class="" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1">Số điện thoại</th>
+                                                    <th class="" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1">Tên đăng nhập</th>
+                                                    <th class="" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1">Ngày tạo</th>
+                                                    <th class="text-right" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1">Chức năng</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                {% for account in accounts %}
+                                                    <tr role="row" class="{{ loop.index % 2 == 0 ? 'odd' : 'even' }} {{ account.status == false ? 'warning' : '' }}">
+                                                        <td>{{ account.name }}</td>
+                                                        <td>{{ account.phone }}</td>
+                                                        <td>{{ account.username }}</td>
+                                                        <td>{{ account.createDate | date('d/m/Y') }}</td>
+                                                        <td class="text-right">
+                                                            <a href="{{ path('base_admin_account_edit', { 'id' : account.id }) }}" class="btn btn-info btn-fill">
+                                                                <i class="ti-pencil-alt"></i>
+                                                            </a>
+                                                            <a href="{{ path('base_admin_account_delete', { 'id' : account.id }) }}" class="btn btn-danger btn-fill">
+                                                                <i class="ti-close"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                {% endfor %}
+                                            </tbody>
+                                            <tfoot>
+                                                <tr>
+                                                    <th rowspan="1" colspan="1">Họ tên</th>
+                                                    <th rowspan="1" colspan="1">Số điện thoại</th>
+                                                    <th rowspan="1" colspan="1">Tên đăng nhập</th>
+                                                    <th rowspan="1" colspan="1">Ngày tạo</th>
+                                                    <th class="text-right" rowspan="1" colspan="1">Chức năng</th>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        {% if pager.total_pages > 1 %}
+                                            <div class="dataTables_paginate paging_full_numbers" id="datatables_paginate">
+                                                <ul class="pagination">
+                                                    {% if pager.current_page > 1 %}
+                                                        <li class="paginate_button first" id="datatables_first"><a href="{{ path('base_admin_account_index', {'page': (pager.current_page - 1)}) }}" aria-controls="datatables" data-dt-idx="0" tabindex="0">Trang Đầu</a></li>
+                                                        <li class="paginate_button previous" id="datatables_previous"><a href="#" aria-controls="datatables" data-dt-idx="1" tabindex="0">Trang Trước</a></li>
+                                                    {% endif %}
+
+                                                    {% for i in 1..pager.total_pages %}
+                                                        <li class="paginate_button {{ pager.current_page == loop.index ? 'active' : '' }}"><a href="{{ path('base_admin_account_index', {'page': loop.index}) }}" aria-controls="datatables" data-dt-idx="3" tabindex="0">{{ loop.index }}</a></li>
+                                                    {% endfor %}
+
+                                                    {% if pager.current_page < pager.total_pages %}
+                                                        <li class="paginate_button next" id="datatables_next"><a href="{{ path('base_admin_account_index', {'page': (pager.current_page + 1)}) }}" aria-controls="datatables" data-dt-idx="6" tabindex="0">Trang Kế Tiếp</a></li>
+                                                        <li class="paginate_button last" id="datatables_last"><a href="{{ path('base_admin_account_index', {'page': (pager.current_page + 1)}) }}" aria-controls="datatables" data-dt-idx="7" tabindex="0">Trang Cuối Cùng</a></li>
+                                                    {% endif %}
+                                                </ul>
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end content-->
+                </div>
+                <!--  end card  -->
+            </div>
+            <!-- end col-md-12 -->
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block javascripts %}
+<!-- Select Plugin -->
+<script src="{{ absolute_url(asset('assets/vendors/jquery.select-bootstrap.js')) }}"></script>
+<!--  DataTables.net Plugin    -->
+<script src="{{ absolute_url(asset('assets/vendors/jquery.datatables.js')) }}"></script>
+<!-- Material Dashboard javascript methods -->
+<script src="{{ absolute_url(asset('assets/js/amaze.js')) }}"></script>
+<!-- Material Dashboard DEMO methods, don't include it in your project! -->
+<script src="{{ absolute_url(asset('assets/js/demo.js')) }}"></script>
+{% endblock %}
