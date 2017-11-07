@@ -1,7 +1,3 @@
-base_admin_tableaccount:
-    resource: "@BaseAdminBundle/Resources/config/routing/tableaccount.xml"
-    prefix:   /tableaccount
-
 base_admin_account:
     resource: "@BaseAdminBundle/Resources/config/routing/account.yml"
     prefix:   /account

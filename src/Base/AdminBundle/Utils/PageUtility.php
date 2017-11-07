@@ -25,7 +25,13 @@ class PageUtility
     // Sort field
     private $sortField;
 
-    public function __construct(Request $request, EntityManager $em, $entity_name = null, $page_size = 20, $default_sort_field = null) {
+    public function __construct(
+        Request $request,
+        EntityManager $em,
+        $entity_name = null,
+        $page_size = 20,
+        $default_sort_field = null) {
+
         $this->request = $request;
         $this->em = $em;
         $this->entityName = $entity_name;
