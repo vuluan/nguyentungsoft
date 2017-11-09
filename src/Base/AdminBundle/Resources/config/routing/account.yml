@@ -3,8 +3,8 @@ base_admin_account_index:
   defaults: { _controller: BaseAdminBundle:Account:index }
 
 base_admin_account_create:
-  path: /create
-  defaults: { _controller: BaseAdminBundle:Account:create }
+  path: /create/{id}
+  defaults: { _controller: BaseAdminBundle:Account:create, id: 0 }
   methods: [GET, POST]
 
 base_admin_account_edit:
