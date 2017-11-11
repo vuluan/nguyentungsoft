@@ -48,6 +48,8 @@ class PageUtility
         $total = $this->em->getRepository($this->entityName)
             ->createQueryBuilder('t')
             ->select('count(t.id)')
+            ->where('t.visible = :visible')
+            ->setParameter('visible', true)
             ->getQuery()
             ->getSingleScalarResult();
         return $total;
@@ -79,6 +81,8 @@ class PageUtility
     public function getRecords() {
         $records = $this->em->getRepository($this->entityName)
             ->createQueryBuilder('t')
+            ->where('t.visible = :visible')
+            ->setParameter('visible', true)
             ->orderBy('t.' . $this->sortField, 'ASC')
             ->setFirstResult($this->offset)
             ->setMaxResults($this->pageSize)

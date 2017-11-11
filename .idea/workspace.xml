@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31e5aee8-8a52-4d9b-b120-70a2dec6b8fd" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/avatar_directory/77e7ac1f1a894fd30b2f20bfe158186d.jpeg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/symfony2.xml" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/img/anonymous_user.png" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Account/edit.html.twig" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Account/create.html.twig" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Account/update.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Controller/AccountController.php" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Controller/AccountController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/controller.xml" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/controller.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/routing/account.yml" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/routing/account.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/services.xml" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/services.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Account/create.html.twig" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Account/create.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Account/index.html.twig" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Account/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Service/FileUploader.php" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Service/FileUploader.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/demo.js" afterPath="$PROJECT_DIR$/web/assets/js/demo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Utils/PageUtility.php" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Utils/PageUtility.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,33 +20,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="create.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Account/create.html.twig">
+      <file leaf-file-name="AccountController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Controller/AccountController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="152" column="38" lean-forward="true" selection-start-line="152" selection-start-column="38" selection-end-line="152" selection-end-column="38" />
+            <state relative-caret-position="364">
+              <caret line="139" column="48" lean-forward="false" selection-start-line="139" selection-start-column="48" selection-end-line="139" selection-end-column="48" />
               <folding>
-                <element signature="e#3398#3419#0#HTML" expanded="true" />
+                <element signature="e#47#88#0#PHP" expanded="true" />
+                <element signature="e#1101#1142#0#PHP" expanded="true" />
+                <element signature="e#3541#3583#0#PHP" expanded="true" />
+                <element signature="e#3841#3871#1#PHP" expanded="true" />
+                <element signature="e#5855#5897#0#PHP" expanded="true" />
+                <element signature="e#6296#6326#1#PHP" expanded="true" />
+                <element signature="e#6559#6601#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Account/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="50" column="103" lean-forward="false" selection-start-line="50" selection-start-column="103" selection-end-line="50" selection-end-column="103" />
+            <state relative-caret-position="266">
+              <caret line="24" column="42" lean-forward="false" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Account/edit.html.twig">
+      <file leaf-file-name="PageUtility.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Utils/PageUtility.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="12" column="38" lean-forward="false" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+            <state relative-caret-position="325">
+              <caret line="74" column="9" lean-forward="true" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -58,25 +61,9 @@
       <file leaf-file-name="account.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/routing/account.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="64" lean-forward="false" selection-start-line="6" selection-start-column="64" selection-end-line="6" selection-end-column="64" />
+            <state relative-caret-position="0">
+              <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="24" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AccountController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Controller/AccountController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="106" column="61" lean-forward="false" selection-start-line="106" selection-start-column="61" selection-end-line="106" selection-end-column="61" />
-              <folding>
-                <element signature="e#47#88#0#PHP" expanded="true" />
-                <element signature="e#1155#1196#0#PHP" expanded="true" />
-                <element signature="e#3595#3637#0#PHP" expanded="true" />
-                <element signature="e#3895#3925#1#PHP" expanded="true" />
-                <element signature="e#5909#5951#0#PHP" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -84,7 +71,7 @@
       <file leaf-file-name="TableAccount.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Entity/TableAccount.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
+            <state relative-caret-position="1665">
               <caret line="111" column="43" lean-forward="false" selection-start-line="111" selection-start-column="25" selection-end-line="111" selection-end-column="43" />
               <folding />
             </state>
@@ -97,7 +84,6 @@
     <findStrings>
       <find>datatables_filter</find>
       <find>getRepository</find>
-      <find>getRecords</find>
       <find>getTotal</find>
       <find>totalRecords</find>
       <find>service.yml</find>
@@ -106,6 +92,8 @@
       <find>service</find>
       <find>services.xml</find>
       <find>datetimepicker</find>
+      <find>DateTime</find>
+      <find>getRecords</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/app</dir>
@@ -119,7 +107,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Account/delete.html.twig" />
-        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Utils/PageUtility.php" />
         <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/Base/AdminBundle/Service/AccountService.php" />
         <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/controler.xml" />
@@ -140,10 +127,12 @@
         <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/services.xml" />
         <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/controller.xml" />
         <option value="$PROJECT_DIR$/web/assets/js/demo.js" />
-        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/routing/account.yml" />
-        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Controller/AccountController.php" />
         <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Account/create.html.twig" />
+        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/routing/account.yml" />
+        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Account/update.html.twig" />
         <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Account/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Controller/AccountController.php" />
+        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Utils/PageUtility.php" />
       </list>
     </option>
   </component>
@@ -185,6 +174,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -302,6 +293,14 @@
             <path>
               <item name="base-symfony" type="b2602c69:ProjectViewProjectNode" />
               <item name="base-symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Base" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AdminBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Utils" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="base-symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="base-symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="var" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -326,14 +325,27 @@
               <item name="base-symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="img" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="base-symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="base-symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP Runtime" type="20ee2d1f:SyntheticLibraryElementNode" />
+            </path>
+            <path>
+              <item name="base-symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP Runtime" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="date" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -344,9 +356,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/assets/img" />
       <recent name="$PROJECT_DIR$/web/assets/img/loading" />
       <recent name="$PROJECT_DIR$/src/Base/AdminBundle" />
-      <recent name="$PROJECT_DIR$/web/assets/img" />
       <recent name="$PROJECT_DIR$/src/Base/AdminBundle/DependencyInjection" />
       <recent name="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config" />
     </key>
@@ -382,11 +394,13 @@
       <workItem from="1509708024247" duration="25335000" />
       <workItem from="1510109976537" duration="805000" />
       <workItem from="1510155145968" duration="6428000" />
+      <workItem from="1510306221361" duration="616000" />
+      <workItem from="1510329228958" duration="3880000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55178000" />
+    <option name="totallyTimeSpent" value="59674000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="734" extended-state="0" />
@@ -422,14 +436,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Controller/DashboardController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/basic.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="397">
@@ -441,7 +447,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="29" column="6" lean-forward="false" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -521,14 +526,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Service/DatabaseService.php" />
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Utils/PageUtility.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="29" column="21" lean-forward="false" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/%avatar_directory%/71f7ae598cb0cf82a5994fe5d40c72f9.jpeg" />
     <entry file="file://$PROJECT_DIR$/web/%avatar_directory%/1c3acdf4c35f5b28f31efad433477b09.jpeg" />
     <entry file="file://$PROJECT_DIR$/app/config/config.yml">
@@ -596,7 +593,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -605,11 +601,7 @@
     <entry file="file://$PROJECT_DIR$/web/avatar_directory/afc93e2d6dfa5e6d135fd5d358c7eb18.png" />
     <entry file="file://$PROJECT_DIR$/web/avatar_directory/f33ffbefc858a37c80cf18be0d13f6eb.jpeg" />
     <entry file="file://$PROJECT_DIR$/web/avatar_directory/1070fa3c5146a6dcf2df2e7cca9d87d0.jpeg" />
-    <entry file="file://$PROJECT_DIR$/web/avatar_directory/77e7ac1f1a894fd30b2f20bfe158186d.jpeg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/avatar_directory/77e7ac1f1a894fd30b2f20bfe158186d.jpeg" />
     <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Template/base-amaze-admin.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -635,7 +627,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="24" column="18" lean-forward="false" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -666,9 +657,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="299" column="28" lean-forward="true" selection-start-line="299" selection-start-column="28" selection-end-line="299" selection-end-column="28" />
-          <folding>
-            <marker date="1510158177000" expanded="true" signature="7327:7368" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -698,56 +686,72 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Entity/TableAccount.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
+        <state relative-caret-position="1665">
           <caret line="111" column="43" lean-forward="false" selection-start-line="111" selection-start-column="25" selection-end-line="111" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Account/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="38" lean-forward="false" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Account/update.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="22" column="61" lean-forward="true" selection-start-line="22" selection-start-column="61" selection-end-line="22" selection-end-column="61" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/routing/account.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="64" lean-forward="false" selection-start-line="6" selection-start-column="64" selection-end-line="6" selection-end-column="64" />
+        <state relative-caret-position="0">
+          <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/date/date_c.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="320" column="20" lean-forward="false" selection-start-line="320" selection-start-column="20" selection-end-line="320" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Account/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="24" column="42" lean-forward="false" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Controller/AccountController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="106" column="61" lean-forward="false" selection-start-line="106" selection-start-column="61" selection-end-line="106" selection-end-column="61" />
+        <state relative-caret-position="364">
+          <caret line="139" column="48" lean-forward="false" selection-start-line="139" selection-start-column="48" selection-end-line="139" selection-end-column="48" />
           <folding>
             <element signature="e#47#88#0#PHP" expanded="true" />
-            <element signature="e#1155#1196#0#PHP" expanded="true" />
-            <element signature="e#3595#3637#0#PHP" expanded="true" />
-            <element signature="e#3895#3925#1#PHP" expanded="true" />
-            <element signature="e#5909#5951#0#PHP" expanded="true" />
+            <element signature="e#1101#1142#0#PHP" expanded="true" />
+            <element signature="e#3541#3583#0#PHP" expanded="true" />
+            <element signature="e#3841#3871#1#PHP" expanded="true" />
+            <element signature="e#5855#5897#0#PHP" expanded="true" />
+            <element signature="e#6296#6326#1#PHP" expanded="true" />
+            <element signature="e#6559#6601#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Account/edit.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Utils/PageUtility.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="12" column="38" lean-forward="false" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Account/create.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="152" column="38" lean-forward="true" selection-start-line="152" selection-start-column="38" selection-end-line="152" selection-end-column="38" />
-          <folding>
-            <element signature="e#3398#3419#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Account/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="50" column="103" lean-forward="false" selection-start-line="50" selection-start-column="103" selection-end-line="50" selection-end-column="103" />
+        <state relative-caret-position="325">
+          <caret line="74" column="9" lean-forward="true" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
           <folding />
         </state>
       </provider>

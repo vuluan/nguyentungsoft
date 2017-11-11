@@ -9,7 +9,6 @@ use Symfony\Component\HttpFoundation\Request;
 use Base\AdminBundle\Utils\PageUtility;
 use Symfony\Component\HttpFoundation\Response;
 use Base\AdminBundle\BaseAdminBundleConst;
-use Symfony\Component\Validator\Constraints\DateTime;
 
 /**
  * AccountController.
@@ -52,7 +51,7 @@ class AccountController extends Controller
      * @param int $id
      * @return Response
      */
-    public function createAction($id, Request $request)
+    public function updateAction($id, Request $request)
     {
         if ($id == 0) { // create
             if ($request->isMethod('POST')) {
@@ -88,7 +87,7 @@ class AccountController extends Controller
                 return $this->redirectToRoute('base_admin_account_index');
             }
 
-            return $this->render('BaseAdminBundle:Account:create.html.twig', array(
+            return $this->render('BaseAdminBundle:Account:update.html.twig', array(
                 'account' => null,
                 'listPermission' => BaseAdminBundleConst::$LIST_PERMISSION
             ));
@@ -124,45 +123,11 @@ class AccountController extends Controller
                 $em->flush();
                 return $this->redirectToRoute('base_admin_account_index');
             }
-            return $this->render('BaseAdminBundle:Account:create.html.twig', array(
+            return $this->render('BaseAdminBundle:Account:update.html.twig', array(
                 'account' => $account,
                 'listPermission' => BaseAdminBundleConst::$LIST_PERMISSION
             ));
         }
-    }
-
-    /**
-     * @param int $id
-     * @param Request $request
-     * @return Response
-     */
-    public function editAction($id, Request $request)
-    {
-        $em = $this->getDoctrine()->getManager();
-        $account = $em->getRepository('BaseAdminBundle:TableAccount')->find($id);
-        if ($request->isMethod('POST')) {
-            $account->setName($request->request->get('name'));
-            $account->setEmail($request->request->get('email'));
-            $account->setPhone($request->request->get('phone'));
-            $account->setUsername($request->request->get('username'));
-            if (!empty($request->request->get('password'))) {
-                $account->setPassword($request->request->get('password'));
-            }
-            $file = $request->files->get('avatar');
-            if (!empty($file)) {
-                $this->fileUploader->removeFile($account->getAvatar());
-                $fileName = $this->fileUploader->upload($file);
-                $account->setAvatar($fileName);
-            }
-            $account->setPermission($request->request->get('permission'));
-            $account->setStatus($request->request->get('status') == 1 ? true : false);
-            $em->flush();
-            return $this->redirectToRoute('base_admin_account_index');
-        }
-        return $this->render('BaseAdminBundle:Account:edit.html.twig', array(
-            'account' => $account,
-            'listPermission' => BaseAdminBundleConst::$LIST_PERMISSION
-        ));
     }
 
     /**
@@ -175,7 +140,7 @@ class AccountController extends Controller
         $em = $this->getDoctrine()->getManager();
         $account = $em->getRepository('BaseAdminBundle:TableAccount')->find($id);
         if ($request->isMethod('POST')) {
-            $account->setDelete(true);
+            $account->setVisible(false);
             $em->flush();
             return $this->redirectToRoute('base_admin_account_index');
         }
