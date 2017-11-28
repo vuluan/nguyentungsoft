@@ -1,0 +1,23 @@
+{% if pager.total_pages > 1 %}
+<div class="row">
+    <div class="col-sm-12">
+        <div class="dataTables_paginate paging_full_numbers" id="datatables_paginate">
+            <ul class="pagination">
+                {% if pager.current_page > 1 %}
+                    <li class="paginate_button first" id="datatables_first"><a href="{{ path('base_admin_account_index', {'page': 1}) }}" aria-controls="datatables" data-dt-idx="0" tabindex="0">Trang Đầu</a></li>
+                    <li class="paginate_button previous" id="datatables_previous"><a href="{{ path('base_admin_account_index', {'page': (pager.current_page - 1)}) }}" aria-controls="datatables" data-dt-idx="1" tabindex="0">Trang Trước</a></li>
+                {% endif %}
+
+                {% for i in 1..pager.total_pages %}
+                    <li class="paginate_button {{ pager.current_page == loop.index ? 'active' : '' }}"><a href="{{ path('base_admin_account_index', {'page': loop.index}) }}" aria-controls="datatables" data-dt-idx="3" tabindex="0">{{ loop.index }}</a></li>
+                {% endfor %}
+
+                {% if pager.current_page < pager.total_pages %}
+                    <li class="paginate_button next" id="datatables_next"><a href="{{ path('base_admin_account_index', {'page': (pager.current_page + 1)}) }}" aria-controls="datatables" data-dt-idx="6" tabindex="0">Trang Kế Tiếp</a></li>
+                    <li class="paginate_button last" id="datatables_last"><a href="{{ path('base_admin_account_index', {'page': pager.total_pages}) }}" aria-controls="datatables" data-dt-idx="7" tabindex="0">Trang Cuối Cùng</a></li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</div>
+{% endif %}
