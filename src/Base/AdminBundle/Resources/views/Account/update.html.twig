@@ -31,7 +31,7 @@
                                     <div class="col-md-4">
                                         <div class="fileinput fileinput-new text-center" data-provides="fileinput">
                                             <div class="fileinput-new thumbnail">
-                                                {% if account.avatar is null %}
+                                                {% if account.avatar is not defined %}
                                                     <img src="{{ absolute_url(asset('assets/img/anonymous_user.png')) }}" alt="Image" width="100" height="100">
                                                 {% else %}
                                                     <img src="{{ absolute_url(asset('avatar_directory/') ~ account.avatar) }}" alt="{{ account.avatar }}" width="100" height="100">

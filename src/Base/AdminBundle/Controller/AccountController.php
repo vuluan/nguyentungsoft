@@ -2,7 +2,6 @@
 
 namespace Base\AdminBundle\Controller;
 
-use Base\AdminBundle\Entity\TableAccount;
 use Base\AdminBundle\Service\AccountService;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;

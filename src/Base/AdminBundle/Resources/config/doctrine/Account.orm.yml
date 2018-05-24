@@ -1,0 +1,43 @@
+Base\AdminBundle\Entity\Account:
+    type: entity
+    table: tblAccount
+    repositoryClass: Base\AdminBundle\Repository\Doctrine\AccountRepository
+    id:
+        id:
+            type: integer
+            generator: { strategy: AUTO }
+    fields:
+        name:
+            type: string
+            nullable: true
+            length: 255
+            column: name
+        email:
+            type: string
+            nullable: true
+            length: 255
+            column: email
+        username:
+            type: string
+            nullable: true
+            length: 255
+            column: username
+        password:
+            type: string
+            nullable: true
+            length: 255
+            column: password
+        enable:
+            type: boolean
+            column: enable
+        delete:
+            type: boolean
+            column: delete
+        createdDate:
+            type: datetime
+            nullable: true
+            column: createdDate
+        updatedDate:
+            type: datetime
+            nullable: true
+            column: updatedDate

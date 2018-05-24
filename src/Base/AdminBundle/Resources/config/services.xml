@@ -3,18 +3,8 @@
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 <services>
-    <service class="Base\AdminBundle\Service\FileUploader" id="base_admin.service.file_uploader"/>
-
-    <service class="Base\AdminBundle\Service\PaginationService" id="base_admin.service.pagination_service">
-        <argument id="doctrine.orm.entity_manager" type="service"/>
-        <argument id="Twig_Environment" type="service"/>
+    <service class="Base\AdminBundle\Repository\Doctrine\AccountRepository" id="base_admin.repository_doctrine.account_repository">
+        <argument id="Doctrine\ORM\EntityManagerInterface" type="service"/>
     </service>
-
-    <service class="Base\AdminBundle\Service\AccountService" id="base_admin.service.account_service">
-        <argument id="service_container" type="service"/>
-        <argument id="base_admin.service.file_uploader" type="service"/>
-        <argument id="base_admin.service.pagination_service" type="service"/>
-    </service>
-
 </services>
 </container>

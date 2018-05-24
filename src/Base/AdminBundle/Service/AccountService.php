@@ -45,8 +45,8 @@ class AccountService
 
 
     public function getListAccount() {
-        $request = $this->container->get('request');
-        $this->paginationService->setPagination($request->get('page'));
+//        $request = $this->container->get('request');
+        $this->paginationService->setPagination(0);
         $pagingView = $this->paginationService->renderPagination();
         return array(
             'accounts' => $this->paginationService->getRecords(),
