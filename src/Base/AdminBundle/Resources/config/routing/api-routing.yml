@@ -1,0 +1,4 @@
+base_admin_ajax_check_login:
+  path: /check-login
+  defaults: { _controller: base_admin.controller_api.login_controller:checkLoginAction }
+  methods: [GET]

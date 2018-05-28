@@ -1,15 +1,7 @@
 base_admin_account:
     resource: "@BaseAdminBundle/Resources/config/routing/account.yml"
-    prefix:   /account
+    prefix: /admin
 
-base_admin_dashboard:
-  path: /
-  defaults: { _controller: BaseAdminBundle:Dashboard:index }
-
-base_admin_dashboard_login:
-  path: /login
-  defaults: { _controller: BaseAdminBundle:Dashboard:login }
-
-base_admin_dashboard_register:
-  path: /register
-  defaults: { _controller: BaseAdminBundle:Dashboard:register }
+base_admin_ajax:
+    resource: "@BaseAdminBundle/Resources/config/routing/api-routing.yml"
+    prefix: /api

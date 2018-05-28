@@ -5,6 +5,10 @@ namespace Base\AdminBundle\Controller;
 use Base\AdminBundle\BaseAdminBundleEvents;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
+/**
+ * Class DashboardController
+ * @package Base\AdminBundle\Controller
+ */
 class DashboardController extends Controller
 {
     /**
@@ -17,6 +21,9 @@ class DashboardController extends Controller
      */
     private $postRenderEventName;
 
+    /**
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
     public function indexAction()
     {
         $this->preRenderEventName = BaseAdminBundleEvents::CONTROLLER_RENDER_PRE_DASHBOARD;
@@ -25,6 +32,9 @@ class DashboardController extends Controller
         return $this->render('BaseAdminBundle:Dashboard:index.html.twig');
     }
 
+    /**
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
     public function loginAction()
     {
         $this->preRenderEventName = BaseAdminBundleEvents::CONTROLLER_RENDER_PRE_LOGIN;
