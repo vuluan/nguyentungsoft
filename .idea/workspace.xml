@@ -2,18 +2,99 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31e5aee8-8a52-4d9b-b120-70a2dec6b8fd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Controller/Api/BaseController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Controller/Api/LoginController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/routing/api-routing.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/global/img/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/global/img/portlet-collapse-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/global/img/portlet-config-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/global/img/portlet-reload-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/global/img/portlet-remove-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/layouts/layout/img/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/layouts/layout/img/avatar1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/layouts/layout/img/avatar10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/layouts/layout/img/avatar11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/layouts/layout/img/avatar2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/layouts/layout/img/avatar3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/layouts/layout/img/avatar3_small.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/layouts/layout/img/avatar4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/layouts/layout/img/avatar6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/layouts/layout/img/avatar7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/layouts/layout/img/avatar8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/layouts/layout/img/avatar9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/layouts/layout/img/icon-color.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/layouts/layout/img/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/layouts/layout3/img/avatar1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/layouts/layout3/img/avatar2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/layouts/layout3/img/avatar3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/pages/img/avatars/team3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/pages/img/avatars/team7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/pages/img/background/32.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/pages/img/background/34.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/pages/img/background/37.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/pages/img/background/43.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/pages/img/background/46.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/pages/media/blog/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/pages/media/blog/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/pages/media/users/avatar1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/pages/media/users/avatar10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/pages/media/users/avatar2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/pages/media/users/avatar3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/pages/media/users/avatar4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/pages/media/users/avatar5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/pages/media/users/avatar6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/pages/media/users/avatar7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/pages/media/users/avatar8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/pages/media/users/avatar80_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/pages/media/users/avatar80_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/pages/media/users/avatar80_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/pages/media/users/avatar80_5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/pages/media/users/avatar80_6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/pages/media/users/avatar80_7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/pages/media/users/avatar80_8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/pages/media/users/avatar9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/global/plugins/amcharts/amcharts/amcharts.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/global/plugins/amcharts/amcharts/pie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/global/plugins/amcharts/amcharts/radar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/global/plugins/amcharts/amcharts/serial.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/global/plugins/amcharts/amcharts/themes/chalk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/global/plugins/amcharts/amcharts/themes/light.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/global/plugins/amcharts/amcharts/themes/patterns.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/global/plugins/amcharts/ammap/ammap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/global/plugins/amcharts/ammap/maps/js/worldLow.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/global/plugins/amcharts/amstockcharts/amstock.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/global/plugins/counterup/jquery.counterup.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/global/plugins/counterup/jquery.waypoints.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/global/plugins/flot/jquery.flot.categories.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/global/plugins/flot/jquery.flot.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/global/plugins/flot/jquery.flot.resize.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/global/plugins/fullcalendar/fullcalendar.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/global/plugins/fullcalendar/fullcalendar.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/global/plugins/horizontal-timeline/horizontal-timeline.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/global/plugins/jquery-easypiechart/jquery.easypiechart.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/global/plugins/jquery.sparkline.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/global/plugins/jqvmap/jqvmap/data/jquery.vmap.sampledata.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/global/plugins/jqvmap/jqvmap/jquery.vmap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/global/plugins/jqvmap/jqvmap/jqvmap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.europe.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.germany.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.russia.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.usa.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.world.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/global/plugins/moment.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/global/plugins/morris/morris.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/global/plugins/morris/morris.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/global/plugins/morris/raphael-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/layouts/global/scripts/quick-nav.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/layouts/global/scripts/quick-sidebar.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/layouts/layout/css/layout.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/layouts/layout/css/themes/darkblue.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/layouts/layout/scripts/demo.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/layouts/layout/scripts/layout.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/pages/scripts/dashboard.min.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/global/img/remove-icon-small.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Controller/DashboardController.php" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Controller/DashboardController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/controller.xml" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/controller.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/routing/account.yml" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/routing/account.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Dashboard/index.html.twig" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Dashboard/index.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Dashboard/login.html.twig" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Dashboard/login.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/pages/css/login-5.min.css" afterPath="$PROJECT_DIR$/web/assets/pages/css/login-5.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/pages/scripts/login-5.min.js" afterPath="$PROJECT_DIR$/web/assets/pages/scripts/login-5.min.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,24 +104,68 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="account.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/routing/account.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" column="57" lean-forward="false" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DashboardController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Controller/DashboardController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="354">
+              <caret line="31" column="66" lean-forward="false" selection-start-line="31" selection-start-column="66" selection-end-line="31" selection-end-column="66" />
+              <folding>
+                <element signature="e#47#90#0#PHP" expanded="true" />
+                <element signature="e#1118#1161#1#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Dashboard/index.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="227">
+              <caret line="446" column="52" lean-forward="false" selection-start-line="446" selection-start-column="52" selection-end-line="446" selection-end-column="52" />
+              <folding>
+                <element signature="n#style#0;n#ul#0;n#li#1;n#ul#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ul#0;n#li#1;n#ul#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#span#1;n#a#0;n#li#0;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#span#1;n#a#0;n#li#1;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#span#1;n#a#0;n#li#2;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#span#1;n#a#0;n#li#3;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#span#1;n#a#0;n#li#4;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#span#1;n#a#0;n#li#5;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#span#1;n#a#0;n#li#6;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#h1#0;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="e#96513#96519#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Dashboard/login.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="17" column="104" lean-forward="false" selection-start-line="17" selection-start-column="98" selection-end-line="17" selection-end-column="104" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>datatables_filter</find>
-      <find>getRepository</find>
-      <find>service.yml</find>
-      <find>services.yml</find>
-      <find>Extension</find>
-      <find>service</find>
-      <find>services.xml</find>
-      <find>datetimepicker</find>
-      <find>DateTime</find>
-      <find>$totalRecords</find>
-      <find>currentPage</find>
-      <find>$currentPage</find>
-      <find>entityManager</find>
-      <find>getRecords</find>
       <find>request</find>
       <find>EntityManager</find>
       <find>totalRecords</find>
@@ -56,6 +181,21 @@
       <find>login-bg</find>
       <find>Copyright</find>
       <find>buildQueryByCriteria</find>
+      <find>Metr</find>
+      <find>absolute_url</find>
+      <find>img/background/43.jpg</find>
+      <find>assets/pages/img/background/32.jpg</find>
+      <find>background-image: url(</find>
+      <find>&lt;!-- BEGIN QUICK NAV --&gt;</find>
+      <find>&lt;!-- BEGIN THEME PANEL --&gt;</find>
+      <find>page-content-wrapper</find>
+      <find>page-quick-sidebar-wrapper</find>
+      <find>dropdown dropdown-quick-sidebar-toggler</find>
+      <find>opensleft</find>
+      <find>daterangepicker</find>
+      <find>page-toolbar</find>
+      <find>Purchase</find>
+      <find>Dashboard</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/app</dir>
@@ -107,7 +247,6 @@
         <option value="$PROJECT_DIR$/src/Base/AdminBundle/Controller/AbstractController.php" />
         <option value="$PROJECT_DIR$/src/Base/AdminBundle/BaseAdminBundleEvents.php" />
         <option value="$PROJECT_DIR$/src/Base/AdminBundle/Controller/DashboardController.php" />
-        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Dashboard/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/routing/account.yml" />
         <option value="$PROJECT_DIR$/src/Base/AdminBundle/Controller/Api/BaseController.php" />
         <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/controller.xml" />
@@ -115,8 +254,9 @@
         <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/routing/api-routing.yml" />
         <option value="$PROJECT_DIR$/src/Base/AdminBundle/Controller/Api/LoginController.php" />
         <option value="$PROJECT_DIR$/web/assets/pages/css/login-5.min.css" />
-        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Dashboard/login.html.twig" />
         <option value="$PROJECT_DIR$/web/assets/pages/scripts/login-5.min.js" />
+        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Dashboard/login.html.twig" />
+        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Dashboard/index.html.twig" />
       </list>
     </option>
   </component>
@@ -166,6 +306,83 @@
               <item name="base-symfony" type="b2602c69:ProjectViewProjectNode" />
               <item name="base-symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="base-symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="base-symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="base-symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="base-symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="base-symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="base-symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Base" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="base-symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="base-symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Base" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AdminBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="base-symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="base-symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Base" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AdminBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="base-symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="base-symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Base" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AdminBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="base-symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="base-symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Base" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AdminBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="base-symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="base-symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Base" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AdminBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="routing" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="base-symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="base-symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Base" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AdminBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="base-symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="base-symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Base" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AdminBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Dashboard" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -181,11 +398,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/assets" />
       <recent name="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/routing" />
       <recent name="$PROJECT_DIR$/src/Base/AdminBundle/Controller/Api" />
       <recent name="$PROJECT_DIR$/src/Base/AdminBundle/Event" />
       <recent name="$PROJECT_DIR$/src/Base/AdminBundle" />
-      <recent name="$PROJECT_DIR$/src/Base/AdminBundle/Controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -233,17 +450,18 @@
       <workItem from="1527154071477" duration="11892000" />
       <workItem from="1527223379745" duration="1274000" />
       <workItem from="1527307423432" duration="11150000" />
-      <workItem from="1527498749573" duration="782000" />
+      <workItem from="1527498749573" duration="4535000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116450000" />
+    <option name="totallyTimeSpent" value="120203000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="832" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2986111" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2986111" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930514" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -275,13 +493,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpFoundation/Request.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="30" column="6" lean-forward="false" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/config_dev.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -503,36 +714,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/routing/account.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Manager/AccountManager.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Controller/DashboardController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-          <folding>
-            <element signature="e#47#90#0#PHP" expanded="true" />
-            <element signature="e#743#786#1#PHP" expanded="true" />
-            <element signature="e#1118#1161#1#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -541,13 +726,6 @@
         <state relative-caret-position="805">
           <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Dashboard/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -586,7 +764,7 @@
         <state relative-caret-position="437">
           <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
           <folding>
-            <element signature="e#51#95#0#PHP" expanded="true" />
+            <element signature="e#51#95#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -607,19 +785,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Dashboard/login.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="38" column="20" lean-forward="false" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/assets/pages/scripts/login-5.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
           <caret line="52" column="16" lean-forward="true" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/routing/account.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="57" lean-forward="false" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/keenthemes.com_files/keenthemes.com/preview/metronic/theme/admin_1/admin_1.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="18" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="5874" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Controller/DashboardController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="31" column="66" lean-forward="false" selection-start-line="31" selection-start-column="66" selection-end-line="31" selection-end-column="66" />
+          <folding>
+            <element signature="e#47#90#0#PHP" expanded="true" />
+            <element signature="e#1118#1161#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Dashboard/login.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="104" lean-forward="false" selection-start-line="17" selection-start-column="98" selection-end-line="17" selection-end-column="104" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Dashboard/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="446" column="52" lean-forward="false" selection-start-line="446" selection-start-column="52" selection-end-line="446" selection-end-column="52" />
+          <folding>
+            <element signature="n#style#0;n#ul#0;n#li#1;n#ul#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#li#1;n#ul#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#span#1;n#a#0;n#li#0;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#span#1;n#a#0;n#li#1;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#span#1;n#a#0;n#li#2;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#span#1;n#a#0;n#li#3;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#span#1;n#a#0;n#li#4;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#span#1;n#a#0;n#li#5;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#span#1;n#a#0;n#li#6;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#h1#0;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#96513#96519#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
