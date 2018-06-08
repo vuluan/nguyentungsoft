@@ -1,154 +1,69 @@
-{# @var account \Base\AdminBundle\Entity\TableAccount #}
+{% extends '@BaseAdmin/Template/layout.html.twig' %}
 
-{% extends '@BaseAdminBundle/Template/base-amaze-admin.html.twig' %}
-
-{% block right_content %}
-<div class="content">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card">
-                    <form method="get" action="{{ absolute_url(path('base_admin_account_index')) }}" class="form-horizontal">
-                        <div class="header card-header-text">
-                            <h4 class="title">Tìm kiếm</h4>
-                        </div>
-                        <div class="content">
-                            <fieldset>
-                                <div class="form-group">
-                                    <label class="col-sm-2 control-label">Họ tên</label>
-                                    <div class="col-sm-4">
-                                        <input type="text" class="form-control" name="searchName">
-                                    </div>
-                                    <label class="col-sm-2 control-label">Tên đăng nhập</label>
-                                    <div class="col-sm-4">
-                                        <input type="text" class="form-control" name="searchUsername">
-                                    </div>
-                                </div>
-                            </fieldset>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="col-md-12">
-                <div class="card">
-                    <div class="content">
-                        <h4 class="title">Danh sách tài khoản</h4>
-                        <div class="toolbar">
-
-                        </div>
-                        <div class="material-datatables">
-                            <div id="datatables_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <div id="datatables_filter" class="dataTables_filter">
-                                            <a class="btn btn-primary btn-round" href="{{ absolute_url(path('base_admin_account_update')) }}">
-                                                <i class="ti-plus"></i> Tạo tài khoản mới
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <table id="datatables" class="table table-hover" role="grid" aria-describedby="datatables_info">
-                                            <thead>
-                                                <tr role="row">
-                                                    <th class="" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1">Hình Đại Diện</th>
-                                                    <th class="" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1">Họ tên</th>
-                                                    <th class="" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1">Số điện thoại</th>
-                                                    <th class="" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1">Tên đăng nhập</th>
-                                                    <th class="" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1">Ngày tạo</th>
-                                                    <th class="text-right" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1">Chức năng</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                {% for account in accounts %}
-                                                    <tr role="row" class="{{ loop.index % 2 == 0 ? 'odd' : 'even' }} {{ account.status == false ? 'warning' : '' }}">
-                                                        <td>
-                                                            {% if account.avatar is null %}
-                                                                <img src="{{ absolute_url(asset('assets/img/anonymous_user.png')) }}" alt="{{ account.name }}" width="40" height="40">
-                                                            {% else %}
-                                                                <img src="{{ absolute_url(asset('avatar_directory/') ~ account.avatar) }}" alt="{{ account.name }}" width="40" height="40">
-                                                            {% endif %}
-                                                        </td>
-                                                        <td>{{ account.name }}</td>
-                                                        <td>{{ account.phone }}</td>
-                                                        <td>{{ account.username }}</td>
-                                                        <td>{{ account.createDate | date('d/m/Y') }}</td>
-                                                        <td class="text-right">
-                                                            <a href="{{ path('base_admin_account_update', { 'id' : account.id }) }}" class="btn btn-info btn-fill">
-                                                                <i class="ti-pencil-alt"></i>
-                                                            </a>
-                                                            <a href="{{ path('base_admin_account_delete', { 'id' : account.id }) }}" class="btn btn-danger btn-fill">
-                                                                <i class="ti-close"></i>
-                                                            </a>
-                                                        </td>
-                                                    </tr>
-                                                {% endfor %}
-                                            </tbody>
-                                            <tfoot>
-                                                <tr>
-                                                    <th rowspan="1" colspan="1">Hình Đại Diện</th>
-                                                    <th rowspan="1" colspan="1">Họ tên</th>
-                                                    <th rowspan="1" colspan="1">Số điện thoại</th>
-                                                    <th rowspan="1" colspan="1">Tên đăng nhập</th>
-                                                    <th rowspan="1" colspan="1">Ngày tạo</th>
-                                                    <th class="text-right" rowspan="1" colspan="1">Chức năng</th>
-                                                </tr>
-                                            </tfoot>
-                                        </table>
-                                    </div>
-                                </div>
-                                {{ pagination | raw }}
-                                {#<div class="row">#}
-                                    {#<div class="col-sm-12">#}
-                                        {#{% if pager.total_pages > 1 %}#}
-                                            {#<div class="dataTables_paginate paging_full_numbers" id="datatables_paginate">#}
-                                                {#<ul class="pagination">#}
-                                                    {#{% if pager.current_page > 1 %}#}
-                                                        {#<li class="paginate_button first" id="datatables_first"><a href="{{ path('base_admin_account_index', {'page': 1}) }}" aria-controls="datatables" data-dt-idx="0" tabindex="0">Trang Đầu</a></li>#}
-                                                        {#<li class="paginate_button previous" id="datatables_previous"><a href="{{ path('base_admin_account_index', {'page': (pager.current_page - 1)}) }}" aria-controls="datatables" data-dt-idx="1" tabindex="0">Trang Trước</a></li>#}
-                                                    {#{% endif %}#}
-
-                                                    {#{% for i in 1..pager.total_pages %}#}
-                                                        {#<li class="paginate_button {{ pager.current_page == loop.index ? 'active' : '' }}"><a href="{{ path('base_admin_account_index', {'page': loop.index}) }}" aria-controls="datatables" data-dt-idx="3" tabindex="0">{{ loop.index }}</a></li>#}
-                                                    {#{% endfor %}#}
-
-                                                    {#{% if pager.current_page < pager.total_pages %}#}
-                                                        {#<li class="paginate_button next" id="datatables_next"><a href="{{ path('base_admin_account_index', {'page': (pager.current_page + 1)}) }}" aria-controls="datatables" data-dt-idx="6" tabindex="0">Trang Kế Tiếp</a></li>#}
-                                                        {#<li class="paginate_button last" id="datatables_last"><a href="{{ path('base_admin_account_index', {'page': pager.total_pages}) }}" aria-controls="datatables" data-dt-idx="7" tabindex="0">Trang Cuối Cùng</a></li>#}
-                                                    {#{% endif %}#}
-                                                {#</ul>#}
-                                            {#</div>#}
-                                        {#{% endif %}#}
-                                    {#</div>#}
-                                {#</div>#}
-                            </div>
-                        </div>
+{% block body %}
+    <!-- BEGIN PAGE HEADER-->
+    <!-- BEGIN PAGE BAR -->
+    <div class="page-bar">
+        <ul class="page-breadcrumb">
+            <li>
+                <a href="{{ path('base_admin_dashboard') }}">Dashboard</a>
+                <i class="fa fa-circle"></i>
+            </li>
+            <li>
+                <span>Accounts</span>
+            </li>
+        </ul>
+    </div>
+    <!-- END PAGE BAR -->
+    <!-- BEGIN PAGE TITLE-->
+    <h1 class="page-title"> Accounts
+    </h1>
+    <!-- END PAGE TITLE-->
+    <!-- END PAGE HEADER-->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="portlet light bordered">
+                <div class="portlet-title">
+                    <div class="caption">
+                        <i class="icon-social-dribbble font-green hide"></i>
+                        <span class="caption-subject font-dark bold uppercase">Table Styling</span>
                     </div>
-                    <!-- end content-->
+                    <div class="actions">
+                        <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
+                            <i class="icon-cloud-upload"></i>
+                        </a>
+                        <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
+                            <i class="icon-wrench"></i>
+                        </a>
+                        <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
+                            <i class="icon-trash"></i>
+                        </a>
+                    </div>
                 </div>
-                <!--  end card  -->
+                <div class="portlet-body">
+                    <div class="mt-checkbox-inline">
+                        <label class="mt-checkbox">
+                            <input id="hover" type="checkbox" checked=""> hover
+                            <span></span>
+                        </label>
+                        <label class="mt-checkbox">
+                            <input id="striped" type="checkbox"> striped
+                            <span></span>
+                        </label>
+                        <label class="mt-checkbox">
+                            <input id="condensed" type="checkbox"> condensed
+                            <span></span>
+                        </label>
+                    </div>
+                    <div class="bootstrap-table"><div class="fixed-table-toolbar"></div><div class="fixed-table-container" style="height: 299px; padding-bottom: 40px;"><div class="fixed-table-header" style="margin-right: 0px;"><table class="table table-hover" style="width: 523px;"><thead><tr><th class="col-md-2" style="" data-field="id" tabindex="0"><div class="th-inner ">Item ID</div><div class="fht-cell" style="width: 88px;"></div></th><th class="col-md-6" style="" data-field="name" tabindex="0"><div class="th-inner ">
+                                                <i class="glyphicon glyphicon-star"></i> Item Name </div><div class="fht-cell" style="width: 260px;"></div></th><th class="col-md-4" style="" data-field="price" tabindex="0"><div class="th-inner ">
+                                                <i class="glyphicon glyphicon-heart"></i> Item Price </div><div class="fht-cell" style="width: 173px;"></div></th></tr></thead></table></div><div class="fixed-table-body"><div class="fixed-table-loading" style="top: 41px; display: none;">Loading, please wait...</div><table id="table-style" data-toggle="table" data-url="../assets/global/plugins/bootstrap-table/data/data1.json" data-height="299" data-row-style="rowStyle" class="table table-hover" style="margin-top: -40px;">
+                                    <thead><tr><th class="col-md-2" style="" data-field="id" tabindex="0"><div class="th-inner ">Item ID</div><div class="fht-cell"></div></th><th class="col-md-6" style="" data-field="name" tabindex="0"><div class="th-inner ">
+                                                <i class="glyphicon glyphicon-star"></i> Item Name </div><div class="fht-cell"></div></th><th class="col-md-4" style="" data-field="price" tabindex="0"><div class="th-inner ">
+                                                <i class="glyphicon glyphicon-heart"></i> Item Price </div><div class="fht-cell"></div></th></tr></thead>
+                                    <tbody><tr data-index="0"><td class="col-md-2" style="">0</td><td class="col-md-6" style="">test0</td><td class="col-md-4" style="">$0</td></tr><tr data-index="1"><td class="col-md-2" style="">1</td><td class="col-md-6" style="">test1</td><td class="col-md-4" style="">$1</td></tr><tr data-index="2"><td class="col-md-2" style="">2</td><td class="col-md-6" style="">test2</td><td class="col-md-4" style="">$2</td></tr><tr data-index="3"><td class="col-md-2" style="">3</td><td class="col-md-6" style="">test3</td><td class="col-md-4" style="">$3</td></tr><tr data-index="4"><td class="col-md-2" style="">4</td><td class="col-md-6" style="">test4</td><td class="col-md-4" style="">$4</td></tr><tr data-index="5"><td class="col-md-2" style="">5</td><td class="col-md-6" style="">test5</td><td class="col-md-4" style="">$5</td></tr><tr data-index="6"><td class="col-md-2" style="">6</td><td class="col-md-6" style="">test6</td><td class="col-md-4" style="">$6</td></tr><tr data-index="7"><td class="col-md-2" style="">7</td><td class="col-md-6" style="">test7</td><td class="col-md-4" style="">$7</td></tr><tr data-index="8"><td class="col-md-2" style="">8</td><td class="col-md-6" style="">test8</td><td class="col-md-4" style="">$8</td></tr><tr data-index="9"><td class="col-md-2" style="">9</td><td class="col-md-6" style="">test9</td><td class="col-md-4" style="">$9</td></tr><tr data-index="10"><td class="col-md-2" style="">10</td><td class="col-md-6" style="">test10</td><td class="col-md-4" style="">$10</td></tr><tr data-index="11"><td class="col-md-2" style="">11</td><td class="col-md-6" style="">test11</td><td class="col-md-4" style="">$11</td></tr><tr data-index="12"><td class="col-md-2" style="">12</td><td class="col-md-6" style="">test12</td><td class="col-md-4" style="">$12</td></tr><tr data-index="13"><td class="col-md-2" style="">13</td><td class="col-md-6" style="">test13</td><td class="col-md-4" style="">$13</td></tr><tr data-index="14"><td class="col-md-2" style="">14</td><td class="col-md-6" style="">test14</td><td class="col-md-4" style="">$14</td></tr><tr data-index="15"><td class="col-md-2" style="">15</td><td class="col-md-6" style="">test15</td><td class="col-md-4" style="">$15</td></tr><tr data-index="16"><td class="col-md-2" style="">16</td><td class="col-md-6" style="">test16</td><td class="col-md-4" style="">$16</td></tr><tr data-index="17"><td class="col-md-2" style="">17</td><td class="col-md-6" style="">test17</td><td class="col-md-4" style="">$17</td></tr><tr data-index="18"><td class="col-md-2" style="">18</td><td class="col-md-6" style="">test18</td><td class="col-md-4" style="">$18</td></tr><tr data-index="19"><td class="col-md-2" style="">19</td><td class="col-md-6" style="">test19</td><td class="col-md-4" style="">$19</td></tr><tr data-index="20"><td class="col-md-2" style="">20</td><td class="col-md-6" style="">test20</td><td class="col-md-4" style="">$20</td></tr></tbody></table></div><div class="fixed-table-footer" style="display: none;"><table><tbody><tr></tr></tbody></table></div><div class="fixed-table-pagination" style="display: none;"></div></div></div><div class="clearfix"></div>
+                </div>
             </div>
-            <!-- end col-md-12 -->
         </div>
     </div>
-</div>
-{% endblock %}
-{% block javascripts %}
-<!-- Select Plugin -->
-<script src="{{ absolute_url(asset('assets/vendors/jquery.select-bootstrap.js')) }}"></script>
-<!--  DataTables.net Plugin    -->
-<script src="{{ absolute_url(asset('assets/vendors/jquery.datatables.js')) }}"></script>
-<!-- Material Dashboard javascript methods -->
-<script src="{{ absolute_url(asset('assets/js/amaze.js')) }}"></script>
-<!-- Material Dashboard DEMO methods, don't include it in your project! -->
-<script src="{{ absolute_url(asset('assets/js/demo.js')) }}"></script>
-{#<script>#}
-    {#$(function () {#}
-        {#$(".se-pre-con").fadeIn("slow");#}
-        {#setTimeout(function () {#}
-            {#$(".se-pre-con").fadeOut("slow");#}
-        {#},5000);#}
-    {#});#}
-{#</script>#}
 {% endblock %}

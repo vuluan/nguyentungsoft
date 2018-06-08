@@ -2,3 +2,8 @@ base_admin_ajax_check_login:
   path: /check-login
   defaults: { _controller: base_admin.controller_api.login_controller:checkLoginAction }
   methods: [GET]
+
+base_admin_ajax_update_account:
+  path: /update-account
+  defaults: { _controller: base_admin.controller_api.account_controller:updateAction }
+  methods: [POST]

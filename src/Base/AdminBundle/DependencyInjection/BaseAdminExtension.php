@@ -21,6 +21,7 @@ class BaseAdminExtension extends Extension
     {
         $loader = new XmlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
         $loader->load('services.xml');
+        $loader->load('listeners.xml');
         $loader->load('controller.xml');
         $loader->load('manager.xml');
     }

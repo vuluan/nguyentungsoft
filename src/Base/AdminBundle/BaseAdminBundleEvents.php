@@ -38,4 +38,24 @@ final class BaseAdminBundleEvents
      * This event is fired on every controller after rendering is finished.
      */
     const CONTROLLER_RENDER_POST_LOGIN = 'base.controller_render_post_login';
+
+    /**
+     * This event is fired on every controller before rendering is started.
+     */
+    const CONTROLLER_RENDER_PRE_ACCOUNT = 'base.controller_render_pre_account';
+
+    /**
+     * This event is fired on every controller after rendering is finished.
+     */
+    const CONTROLLER_RENDER_POST_ACCOUNT = 'base.controller_render_post_account';
+
+    /**
+     * This event is fired on every controller before rendering is started.
+     */
+    const CONTROLLER_RENDER_PRE_ACCOUNT_UPDATE = 'base.controller_render_pre_account';
+
+    /**
+     * This event is fired on every controller after rendering is finished.
+     */
+    const CONTROLLER_RENDER_POST_ACCOUNT_UPDATE = 'base.controller_render_post_account';
 }

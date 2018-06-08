@@ -36,12 +36,12 @@ class Account
     /**
      * @var bool
      */
-    private $enable;
+    private $active;
 
     /**
      * @var bool
      */
-    private $delete;
+    private $removedRecord;
 
     /**
      * @var \DateTime
@@ -58,8 +58,8 @@ class Account
      */
     public function __construct()
     {
-        $this->setEnable(true);
-        $this->setDelete(false);
+        $this->setActive(true);
+        $this->setRemovedRecord(false);
         $this->setCreatedDate(new \DateTime());
         $this->setUpdatedDate(new \DateTime());
     }
@@ -147,33 +147,33 @@ class Account
     /**
      * @return bool
      */
-    public function isEnable(): bool
+    public function isActive(): bool
     {
-        return $this->enable;
+        return $this->active;
     }
 
     /**
-     * @param bool $enable
+     * @param bool $active
      */
-    public function setEnable(bool $enable)
+    public function setActive(bool $active)
     {
-        $this->enable = $enable;
+        $this->active = $active;
     }
 
     /**
      * @return bool
      */
-    public function isDelete(): bool
+    public function isRemovedRecord(): bool
     {
-        return $this->delete;
+        return $this->removedRecord;
     }
 
     /**
-     * @param bool $delete
+     * @param bool $removedRecord
      */
-    public function setDelete(bool $delete)
+    public function setRemovedRecord(bool $removedRecord)
     {
-        $this->delete = $delete;
+        $this->removedRecord = $removedRecord;
     }
 
     /**

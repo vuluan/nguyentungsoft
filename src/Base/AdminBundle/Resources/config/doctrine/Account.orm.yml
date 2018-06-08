@@ -27,12 +27,12 @@ Base\AdminBundle\Entity\Account:
             nullable: true
             length: 255
             column: password
-        enable:
+        active:
             type: boolean
-            column: enable
-        delete:
+            column: active
+        removedRecord:
             type: boolean
-            column: delete
+            column: removedRecord
         createdDate:
             type: datetime
             nullable: true

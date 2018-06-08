@@ -11,15 +11,8 @@ base_admin_account_index:
   defaults: { _controller: BaseAdminBundle:Account:index }
 
 base_admin_account_update:
-  path: /account/{id}
+  path: /account/update/{id}
   defaults: { _controller: BaseAdminBundle:Account:update, id: 0 }
-  methods: [GET, POST]
+  methods: [GET]
   requirements:
             id:  \d+
-
-base_admin_account_delete:
-  path: /account/{id}
-  defaults: { _controller: BaseAdminBundle:Account:delete }
-  methods: [GET, POST]
-  requirements:
-          id:  \d+
