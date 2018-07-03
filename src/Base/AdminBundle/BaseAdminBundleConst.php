@@ -12,12 +12,9 @@ namespace Base\AdminBundle;
  */
 class BaseAdminBundleConst
 {
-    const PERMISSION_MANAGE_ACCOUNT = 'manage_account';
+    const ACCOUNT_LIST_ITEM_PER_PAGE = 5;
 
-    const PERMISSION_MANAGE_CUSTOMER = 'manage_customer';
+    const CATEGORY_LIST_ITEM_PER_PAGE = 5;
 
-    public static $LIST_PERMISSION = [
-        self::PERMISSION_MANAGE_ACCOUNT => 'Quản lý tài khoản',
-        self::PERMISSION_MANAGE_CUSTOMER => 'Quản lý khách hàng'
-    ];
+    const PRODUCT_LIST_ITEM_PER_PAGE = 5;
 }

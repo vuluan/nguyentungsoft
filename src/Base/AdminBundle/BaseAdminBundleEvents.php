@@ -58,4 +58,44 @@ final class BaseAdminBundleEvents
      * This event is fired on every controller after rendering is finished.
      */
     const CONTROLLER_RENDER_POST_ACCOUNT_UPDATE = 'base.controller_render_post_account';
+
+    /**
+     * This event is fired on every controller before rendering is started.
+     */
+    const CONTROLLER_RENDER_PRE_CATEGORY = 'base.controller_render_pre_category';
+
+    /**
+     * This event is fired on every controller after rendering is finished.
+     */
+    const CONTROLLER_RENDER_POST_CATEGORY = 'base.controller_render_post_category';
+
+    /**
+     * This event is fired on every controller before rendering is started.
+     */
+    const CONTROLLER_RENDER_PRE_CATEGORY_UPDATE = 'base.controller_render_pre_category';
+
+    /**
+     * This event is fired on every controller after rendering is finished.
+     */
+    const CONTROLLER_RENDER_POST_CATEGORY_UPDATE = 'base.controller_render_post_category';
+
+    /**
+     * This event is fired on every controller before rendering is started.
+     */
+    const CONTROLLER_RENDER_PRE_PRODUCT = 'base.controller_render_pre_product';
+
+    /**
+     * This event is fired on every controller after rendering is finished.
+     */
+    const CONTROLLER_RENDER_POST_PRODUCT = 'base.controller_render_post_product';
+
+    /**
+     * This event is fired on every controller before rendering is started.
+     */
+    const CONTROLLER_RENDER_PRE_PRODUCT_UPDATE = 'base.controller_render_pre_product';
+
+    /**
+     * This event is fired on every controller after rendering is finished.
+     */
+    const CONTROLLER_RENDER_POST_PRODUCT_UPDATE = 'base.controller_render_post_product';
 }

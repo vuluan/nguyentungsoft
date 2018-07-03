@@ -100,7 +100,7 @@
                             <div class="row">
                                 <div class="col-md-offset-3 col-md-9">
                                     <button type="submit" class="btn green">Submit</button>
-                                    <button type="button" class="btn default">Cancel</button>
+                                    <a href="{{ path('base_admin_account_index') }}" class="btn default">Cancel</a>
                                 </div>
                             </div>
                         </div>
@@ -117,8 +117,10 @@
     <script src="{{ absolute_url(asset('assets/global/plugins/jquery-validation/js/jquery.validate.min.js')) }}" type="text/javascript"></script>
     <script src="{{ absolute_url(asset('assets/global/plugins/jquery-validation/js/additional-methods.min.js')) }}" type="text/javascript"></script>
     <script src="{{ absolute_url(asset('assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js')) }}" type="text/javascript"></script>
+    <script src="{{ absolute_url(asset('assets/global/plugins/bootstrap-toastr/toastr.min.js')) }}" type="text/javascript"></script>
 {% endblock %}
 
-{% block page_level_scritp %}
+{% block page_level_script %}
     <script src="{{ absolute_url(asset('assets/pages/scripts/form-validation-account.min.js')) }}" type="text/javascript"></script>
+    <script src="{{ absolute_url(asset('assets/pages/scripts/ui-toastr.min.js')) }}" type="text/javascript"></script>
 {% endblock %}

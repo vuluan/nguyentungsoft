@@ -3,7 +3,17 @@
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 <services>
+    <service class="Base\AdminBundle\Service\FileUploader" id="base_admin.service.file_uploader"/>
+
     <service class="Base\AdminBundle\Repository\Doctrine\AccountRepository" id="base_admin.repository_doctrine.account_repository">
+        <argument id="Doctrine\ORM\EntityManagerInterface" type="service"/>
+    </service>
+
+    <service class="Base\AdminBundle\Repository\Doctrine\CategoryRepository" id="base_admin.repository_doctrine.category_repository">
+        <argument id="Doctrine\ORM\EntityManagerInterface" type="service"/>
+    </service>
+
+    <service class="Base\AdminBundle\Repository\Doctrine\ProductRepository" id="base_admin.repository_doctrine.product_repository">
         <argument id="Doctrine\ORM\EntityManagerInterface" type="service"/>
     </service>
 </services>

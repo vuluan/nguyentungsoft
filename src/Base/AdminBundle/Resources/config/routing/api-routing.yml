@@ -7,3 +7,28 @@ base_admin_ajax_update_account:
   path: /update-account
   defaults: { _controller: base_admin.controller_api.account_controller:updateAction }
   methods: [POST]
+
+base_admin_ajax_list_account:
+  path: /list-account
+  defaults: { _controller: base_admin.controller_api.account_controller:getListAccount }
+  methods: [POST, GET]
+
+base_admin_ajax_update_category:
+  path: /update-category
+  defaults: { _controller: base_admin.controller_api.category_controller:updateAction }
+  methods: [POST]
+
+base_admin_ajax_list_category:
+  path: /list-category
+  defaults: { _controller: base_admin.controller_api.category_controller:getListCategory }
+  methods: [POST, GET]
+
+base_admin_ajax_update_product:
+  path: /update-product
+  defaults: { _controller: base_admin.controller_api.product_controller:updateAction }
+  methods: [POST]
+
+base_admin_ajax_list_product:
+  path: /list-product
+  defaults: { _controller: base_admin.controller_api.product_controller:getListProduct }
+  methods: [POST, GET]

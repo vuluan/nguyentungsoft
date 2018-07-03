@@ -12,6 +12,24 @@
 
     <service class="Base\AdminBundle\Controller\Api\AccountController" id="base_admin.controller_api.account_controller">
         <argument id="base_admin.manager.account_manager" type="service"/>
+        <argument id="Base\AdminBundle\Pagination\PaginationHelper" type="service"/>
+        <call method="setContainer">
+            <argument id="service_container" type="service"/>
+        </call>
+    </service>
+
+    <service class="Base\AdminBundle\Controller\Api\CategoryController" id="base_admin.controller_api.category_controller">
+        <argument id="base_admin.manager.category_manager" type="service"/>
+        <argument id="Base\AdminBundle\Pagination\PaginationHelper" type="service"/>
+        <call method="setContainer">
+            <argument id="service_container" type="service"/>
+        </call>
+    </service>
+
+    <service class="Base\AdminBundle\Controller\Api\ProductController" id="base_admin.controller_api.product_controller">
+        <argument id="Base\AdminBundle\Manager\ProductManager" type="service"/>
+        <argument id="Base\AdminBundle\Pagination\PaginationHelper" type="service"/>
+        <argument id="base_admin.service.file_uploader" type="service"/>
         <call method="setContainer">
             <argument id="service_container" type="service"/>
         </call>

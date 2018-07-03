@@ -32,6 +32,9 @@ class AccountController extends AbstractController
         return $this->render('BaseAdminBundle:Account:index.html.twig');
     }
 
+    /**
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
     public function updateAction(Request $request)
     {
         $this->preRenderEventName = BaseAdminBundleEvents::CONTROLLER_RENDER_PRE_ACCOUNT_UPDATE;

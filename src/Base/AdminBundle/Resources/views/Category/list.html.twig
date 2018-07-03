@@ -1,0 +1,37 @@
+{# item \Base\AdminBundle\Entity\Category #}
+{% set items = categories['items'] %}
+<div class="table-responsive">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th> # </th>
+                <th> Status </th>
+                <th> Name </th>
+                <th> Created Date </th>
+                <th> Updated Date </th>
+                <th> Actions </th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for item in items %}
+            <tr>
+                <td> {{ loop.index }} </td>
+                <td>
+                    {% if item.active %}
+                        <span class="label label-sm label-info"> Active </span>
+                    {% else %}
+                        <span class="label label-sm label-danger"> Inactive </span>
+                    {% endif %}
+                </td>
+                <td> {{ item.name }} </td>
+                <td> {{ item.createdDate.format('d/M/Y H:i') }} </td>
+                <td> {{ item.updatedDate.format('d/M/Y H:i') }} </td>
+                <td>
+                    <a href="{{ path('base_admin_category_update', { 'id': item.id }) }}" class="btn btn-sm green-meadow"><i class="fa fa-edit"></i> Edit </a>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{{ paginationView | raw }}

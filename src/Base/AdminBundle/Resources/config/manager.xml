@@ -6,5 +6,13 @@
     <service class="Base\AdminBundle\Manager\AccountManager" id="base_admin.manager.account_manager">
         <argument id="base_admin.repository_doctrine.account_repository" type="service"/>
     </service>
+
+    <service class="Base\AdminBundle\Manager\CategoryManager" id="base_admin.manager.category_manager">
+        <argument id="base_admin.repository_doctrine.category_repository" type="service"/>
+    </service>
+
+    <service class="Base\AdminBundle\Manager\ProductManager" id="base_admin.manager.product_manager">
+        <argument id="base_admin.repository_doctrine.product_repository" type="service"/>
+    </service>
 </services>
 </container>

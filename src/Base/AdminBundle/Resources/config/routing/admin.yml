@@ -16,3 +16,26 @@ base_admin_account_update:
   methods: [GET]
   requirements:
             id:  \d+
+
+base_admin_category_index:
+  path: /category
+  defaults: { _controller: BaseAdminBundle:Category:index }
+
+base_admin_category_update:
+  path: /category/update/{id}
+  defaults: { _controller: BaseAdminBundle:Category:update, id: 0 }
+  methods: [GET]
+  requirements:
+            id:  \d+
+
+base_admin_product_index:
+  path: /product
+  defaults: { _controller: BaseAdminBundle:Product:index }
+
+base_admin_product_update:
+  path: /product/update/{id}
+  defaults: { _controller: BaseAdminBundle:Product:update, id: 0 }
+  methods: [GET]
+  requirements:
+            id:  \d+
+

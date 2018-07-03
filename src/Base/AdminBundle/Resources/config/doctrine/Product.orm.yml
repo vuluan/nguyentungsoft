@@ -1,0 +1,50 @@
+Base\AdminBundle\Entity\Product:
+    type: entity
+    table: tblProduct
+    repositoryClass: Base\AdminBundle\Repository\Doctrine\ProductRepository
+    id:
+        id:
+            type: integer
+            generator: { strategy: AUTO }
+    fields:
+        name:
+            type: string
+            nullable: true
+            length: 255
+            column: name
+        mainImage:
+            type: string
+            nullable: true
+            length: 255
+            column: mainImage
+        subImages:
+            type: text
+            nullable: true
+            column: subImages
+        description:
+            type: text
+            nullable: true
+            column: description
+        price:
+            type: float
+            column: price
+        salePrice:
+            type: float
+            column: salePrice
+        categoryId:
+            type: integer
+            column: categoryId
+        active:
+            type: boolean
+            column: active
+        removedRecord:
+            type: boolean
+            column: removedRecord
+        createdDate:
+            type: datetime
+            nullable: true
+            column: createdDate
+        updatedDate:
+            type: datetime
+            nullable: true
+            column: updatedDate

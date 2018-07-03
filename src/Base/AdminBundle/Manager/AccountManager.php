@@ -5,6 +5,10 @@ namespace Base\AdminBundle\Manager;
 use Base\AdminBundle\Entity\Account;
 use Base\AdminBundle\Repository\AccountRepositoryInterface;
 
+/**
+ * Class AccountManager
+ * @package Base\AdminBundle\Manager
+ */
 class AccountManager
 {
     /**
@@ -12,6 +16,10 @@ class AccountManager
      */
     private $repository;
 
+    /**
+     * AccountManager constructor.
+     * @param AccountRepositoryInterface $repository
+     */
     public function __construct(AccountRepositoryInterface $repository)
     {
         $this->repository = $repository;

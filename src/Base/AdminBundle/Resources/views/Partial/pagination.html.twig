@@ -1,0 +1,23 @@
+{# paginator \Base\AdminBundle\Pagination\Paginator #}
+<div class="row">
+    <div class="col-md-5 col-sm-12">
+        <div class="dataTables_info" id="sample_1_info" role="status" aria-live="polite">Showing {{ (paginator.currentPage - 1) * paginator.perPage + 1 }} to {{ paginator.currentPage * paginator.perPage > paginator.total ? paginator.total : paginator.currentPage * paginator.perPage }} of {{ paginator.total }} entries</div>
+    </div>
+    {% if paginator.totalPage > 1 %}
+        <div class="col-md-7 col-sm-12 clearfix">
+            <div class="dataTables_paginate paging_bootstrap_number pull-right" id="sample_1_paginate">
+                <ul class="pagination" style="visibility: visible;">
+                    {% if paginator.currentPage > 1 %}
+                        <li class="prev "><a data-url="{{ paginator.url(paginator.currentPage - 1) }}" onclick="PortletAjax.loadContent('{{ paginator.url(paginator.currentPage - 1) }}');" title="Prev"><i class="fa fa-angle-left"></i></a></li>
+                    {% endif %}
+                    {% for page in 1..paginator.totalPage %}
+                        <li class="{{ page == paginator.currentPage ? 'active' : '' }}"><a data-url="{{ paginator.url(page) }}" onclick="PortletAjax.loadContent('{{ paginator.url(page) }}');">{{ page }}</a></li>
+                    {% endfor %}
+                    {% if paginator.currentPage < paginator.totalPage %}
+                        <li class="next"><a data-url="{{ paginator.url(paginator.currentPage + 1) }}" onclick="PortletAjax.loadContent('{{ paginator.url(paginator.currentPage + 1) }}');" title="Next"><i class="fa fa-angle-right"></i></a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    {% endif %}
+</div>

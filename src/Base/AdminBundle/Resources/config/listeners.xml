@@ -7,5 +7,17 @@
         <argument id="base_admin.manager.account_manager" type="service"/>
         <tag name="kernel.event_subscriber"/>
     </service>
+
+    <service class="Base\AdminBundle\Listener\Category\UpdateCategoryListener" id="base_admin.listener_category.update_category_listener">
+        <argument id="base_admin.manager.category_manager" type="service"/>
+        <tag name="kernel.event_subscriber"/>
+    </service>
+
+    <service class="Base\AdminBundle\Listener\Product\UpdateProductListener" id="base_admin.listener_product.update_product_listener">
+        <argument id="Base\AdminBundle\Manager\ProductManager" type="service"/>
+        <argument id="base_admin.manager.category_manager" type="service"/>
+        <tag name="kernel.event_subscriber"/>
+    </service>
+
 </services>
 </container>

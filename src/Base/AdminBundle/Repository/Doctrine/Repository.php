@@ -38,13 +38,19 @@ class Repository
         return $countQuery->getQuery()->getSingleScalarResult();
     }
 
+    /**
+     * @param $queryBuilder
+     * @param $fieldCount
+     * @param int $page
+     * @param int $itemPerPage
+     * @return array
+     */
     public function paginate($queryBuilder, $fieldCount, int $page, int $itemPerPage)
     {
         $total = $this->getCountResult($queryBuilder, $fieldCount);
         $offset = ($page - 1) * $itemPerPage;
         $queryBuilder->setMaxResults($itemPerPage)->setFirstResult($offset);
         $items = $queryBuilder->getQuery()->getResult();
-
         return [
             'items' => $items,
             'total' => $total,
