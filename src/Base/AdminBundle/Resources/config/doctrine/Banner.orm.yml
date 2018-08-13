@@ -1,0 +1,37 @@
+Base\AdminBundle\Entity\Banner:
+    type: entity
+    table: tblBanner
+    repositoryClass: Base\AdminBundle\Repository\Doctrine\BannerRepository
+    id:
+        id:
+            type: integer
+            generator: { strategy: AUTO }
+    fields:
+        name:
+            type: string
+            nullable: true
+            length: 255
+            column: name
+        image:
+            type: string
+            nullable: true
+            length: 255
+            column: image
+        description:
+            type: text
+            nullable: true
+            column: description
+        active:
+            type: boolean
+            column: active
+        removedRecord:
+            type: boolean
+            column: removedRecord
+        createdDate:
+            type: datetime
+            nullable: true
+            column: createdDate
+        updatedDate:
+            type: datetime
+            nullable: true
+            column: updatedDate

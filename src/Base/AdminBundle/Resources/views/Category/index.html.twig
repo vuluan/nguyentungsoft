@@ -29,7 +29,7 @@
                         <span class="caption-subject bold uppercase"> List Category</span>
                     </div>
                     <div class="actions">
-                        <a href="javascript:;" onclick="PortletAjax.loadContent('/api/list-category')" class="btn btn-circle btn-default" >
+                        <a href="javascript:;" onclick="PortletAjax.loadContent()" class="btn btn-circle btn-default" >
                             <i class="fa fa-spinner"></i> Reload </a>
                         <a href="{{ path('base_admin_category_update') }}" class="btn btn-circle btn-default">
                             <i class="fa fa-plus"></i> Add </a>
@@ -81,7 +81,7 @@
                         </div>
                         <div class="form-group">
                             <div class="col-md-12">
-                                <button type="button" class="btn blue pull-right" onclick="PortletAjax.loadContent('/api/list-category')">Search</button>
+                                <button type="button" class="btn blue pull-right" onclick="PortletAjax.loadContent()">Search</button>
                             </div>
                         </div>
                     </form>
@@ -106,7 +106,9 @@
 {% block additional_script %}
     <script>
         $(function () {
-            PortletAjax.loadContent('/api/list-category');
+            PortletAjax.setAPIListUrl('{{ path('base_admin_ajax_list_category') }}');
+            PortletAjax.setAPIDeleteUrl('{{ path('base_admin_ajax_delete_category') }}');
+            PortletAjax.loadContent();
         });
     </script>
 {% endblock %}

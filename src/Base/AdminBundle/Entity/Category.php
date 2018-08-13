@@ -23,6 +23,12 @@ class Category
      */
     private $parentId;
 
+
+    /**
+     * @var array
+     */
+    private $children;
+
     /**
      * @var bool
      */
@@ -100,6 +106,22 @@ class Category
     public function setParentId(int $parentId)
     {
         $this->parentId = $parentId;
+    }
+
+    /**
+     * @return array
+     */
+    public function getChildren(): array
+    {
+        return $this->children;
+    }
+
+    /**
+     * @param array $children
+     */
+    public function setChildren(array $children)
+    {
+        $this->children = $children;
     }
 
     /**

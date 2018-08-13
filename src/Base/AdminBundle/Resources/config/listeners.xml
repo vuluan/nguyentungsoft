@@ -14,8 +14,38 @@
     </service>
 
     <service class="Base\AdminBundle\Listener\Product\UpdateProductListener" id="base_admin.listener_product.update_product_listener">
-        <argument id="Base\AdminBundle\Manager\ProductManager" type="service"/>
+        <argument id="base_admin.manager.product_manager" type="service"/>
         <argument id="base_admin.manager.category_manager" type="service"/>
+        <argument id="base_admin.service.get_category_tree" type="service"/>
+        <tag name="kernel.event_subscriber"/>
+    </service>
+
+    <service class="Base\AdminBundle\Listener\Banner\UpdateBannerListener" id="base_admin.listener_banner.update_banner_listener">
+        <argument id="base_admin.manager.banner_manager" type="service"/>
+        <tag name="kernel.event_subscriber"/>
+    </service>
+
+    <service class="Base\AdminBundle\Listener\Login\CheckLoginListener" id="base_admin.listener_login.check_login_listener">
+        <argument id="base_admin.session.shopping_session" type="service"/>
+        <argument id="router.default" type="service"/>
+        <tag name="kernel.event_subscriber"/>
+    </service>
+
+    <service class="Base\AdminBundle\Listener\Login\LogoutListener" id="base_admin.listener_login.logout_listener">
+        <argument id="base_admin.session.shopping_session" type="service"/>
+        <argument id="router.default" type="service"/>
+        <tag name="kernel.event_subscriber"/>
+    </service>
+
+    <service class="Base\AdminBundle\Listener\Dashboard\UpdateProfileListener" id="base_admin.listener_dashboard.update_profile_listener">
+        <argument id="base_admin.session.shopping_session" type="service"/>
+        <tag name="kernel.event_subscriber"/>
+    </service>
+
+    <service class="Base\AdminBundle\Listener\Dashboard\DashboardListener" id="base_admin.listener_dashboard.dashboard_listener">
+        <argument id="base_admin.manager.account_manager" type="service"/>
+        <argument id="base_admin.manager.category_manager" type="service"/>
+        <argument id="base_admin.manager.product_manager" type="service"/>
         <tag name="kernel.event_subscriber"/>
     </service>
 

@@ -129,4 +129,19 @@ class AccountController extends BaseController
             'paginationView' => $paginationView
         ]);
     }
+
+    /**
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\JsonResponse
+     */
+    public function removeAccount(Request $request) {
+        $id = $request->request->get('id');
+        $account = $this->accountManager->findOneById($id);
+        if ($account instanceof Account) {
+            $this->accountManager->delete($account);
+            return $this->responseWithSuccess();
+        } else {
+            return $this->responseWithError();
+        }
+    }
 }

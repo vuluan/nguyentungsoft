@@ -35,7 +35,7 @@ class ProductController extends AbstractController
     /**
      * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function updateAction(Request $request)
+    public function updateAction()
     {
         $this->preRenderEventName = BaseAdminBundleEvents::CONTROLLER_RENDER_PRE_PRODUCT_UPDATE;
         $this->postRenderEventName = BaseAdminBundleEvents::CONTROLLER_RENDER_POST_PRODUCT_UPDATE;

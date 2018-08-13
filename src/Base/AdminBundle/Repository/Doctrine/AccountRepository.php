@@ -63,6 +63,16 @@ class AccountRepository extends Repository implements AccountRepositoryInterface
                 ->setParameter('username', '%' . $criteria['username'] . '%');
         }
 
+        if (!empty($criteria['loginUsername'])) {
+            $queryBuilder->andWhere('c.username = :loginUsername')
+                ->setParameter('loginUsername', $criteria['loginUsername']);
+        }
+
+        if (!empty($criteria['loginPassword'])) {
+            $queryBuilder->andWhere('c.password = :loginPassword')
+                ->setParameter('loginPassword', $criteria['loginPassword']);
+        }
+
         if (!empty($criteria['fromCreatedDate'])) {
             $fromCreatedDate = \DateTime::createFromFormat('d/m/Y H:i', $criteria['fromCreatedDate']." 00:00");
             $queryBuilder->andWhere('c.createdDate >= :fromCreatedDate')
@@ -177,7 +187,8 @@ class AccountRepository extends Repository implements AccountRepositoryInterface
     public function delete(Account $account)
     {
         try {
-            $this->entityManager->remove($account);
+            $account->setRemovedRecord(true);
+            $this->entityManager->persist($account);
             $this->entityManager->flush();
             return true;
         } catch (\Exception $e) {

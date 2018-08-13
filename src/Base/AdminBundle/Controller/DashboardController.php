@@ -3,13 +3,11 @@
 namespace Base\AdminBundle\Controller;
 
 use Base\AdminBundle\BaseAdminBundleEvents;
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-
 /**
  * Class DashboardController
  * @package Base\AdminBundle\Controller
  */
-class DashboardController extends Controller
+class DashboardController extends AbstractController
 {
     /**
      * @var string
@@ -35,10 +33,21 @@ class DashboardController extends Controller
     /**
      * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function loginAction()
+    public function profileAction()
     {
-        $this->preRenderEventName = BaseAdminBundleEvents::CONTROLLER_RENDER_PRE_LOGIN;
-        $this->postRenderEventName = BaseAdminBundleEvents::CONTROLLER_RENDER_POST_LOGIN;
+        $this->preRenderEventName = BaseAdminBundleEvents::CONTROLLER_RENDER_PRE_PROFILE;
+        $this->postRenderEventName = BaseAdminBundleEvents::CONTROLLER_RENDER_POST_PROFILE;
+
+        return $this->render('BaseAdminBundle:Dashboard:profile.html.twig');
+    }
+
+    /**
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function logoutAction()
+    {
+        $this->preRenderEventName = BaseAdminBundleEvents::CONTROLLER_RENDER_PRE_LOGOUT;
+        $this->postRenderEventName = BaseAdminBundleEvents::CONTROLLER_RENDER_POST_LOGOUT;
 
         return $this->render('BaseAdminBundle:Dashboard:login.html.twig');
     }

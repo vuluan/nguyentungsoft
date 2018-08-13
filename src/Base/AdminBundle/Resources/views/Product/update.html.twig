@@ -64,13 +64,15 @@
                                 <label class="control-label col-md-3">Main Image
                                     <span class="required" aria-required="true"> * </span>
                                 </label>
+                                {% set checkMainImage = product is defined and product.mainImage is not null and product.mainImage | trim != "" %}
                                 <div class="col-md-4">
-                                    <div class="fileinput {{ product is defined and product.mainImage is not null ? 'fileinput-exists' : 'fileinput-new' }}" data-provides="fileinput">
+                                    <input type="hidden" id="checkMainImage" value="{{ checkMainImage }}">
+                                    <div class="fileinput {{ checkMainImage ? 'fileinput-exists' : 'fileinput-new' }}" data-provides="fileinput">
                                         <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
                                             <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&text=no+image" data-src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&text=no+image" alt="...">
                                         </div>
                                         <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;">
-                                            {% if product is defined and product.mainImage is not null %}
+                                            {% if checkMainImage %}
                                                 <img src="{{ '/products/' ~ product.mainImage }}" data-src="{{ '/products/' ~ product.mainImage }}" alt="...">
                                             {% else %}
                                                 <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&text=no+image" data-src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&text=no+image" alt="...">
@@ -82,7 +84,7 @@
                                                 <span class="fileinput-exists">Change</span>
                                                 <input type="file" name="formProduct[mainImage]">
                                             </span>
-                                            <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+                                            <a href="#" class="btn btn-default {{ checkMainImage ? 'fileinput-new' : 'fileinput-exists' }}" data-dismiss="fileinput">Remove</a>
                                         </div>
                                     </div>
                                 </div>
@@ -94,7 +96,7 @@
                                 <div class="col-md-4">
                                     <div class="input-icon right">
                                         <i class="fa"></i>
-                                        <input type="text" class="form-control" value="{{ product is defined ? product.price : '' }}" name="formProduct[price]">
+                                        <input type="text" class="form-control" value="{{ product is defined ? product.price : '0' }}" name="formProduct[price]">
                                     </div>
                                 </div>
                             </div>
@@ -105,7 +107,7 @@
                                 <div class="col-md-4">
                                     <div class="input-icon right">
                                         <i class="fa"></i>
-                                        <input type="text" class="form-control" value="{{ product is defined ? product.salePrice : '' }}" name="formProduct[salePrice]">
+                                        <input type="text" class="form-control" value="{{ product is defined ? product.salePrice : '0' }}" name="formProduct[salePrice]">
                                     </div>
                                 </div>
                             </div>
@@ -115,9 +117,15 @@
                                 </label>
                                 <div class="col-md-4">
                                     {# category \Base\AdminBundle\Entity\Category #}
-                                    <select class="bs-select form-control" name="formProduct[categoryId]" data-live-search="true" data-size="8">
+                                    {# child \Base\AdminBundle\Entity\Category #}
+                                    <select class="bs-select form-control" data-show-subtext="true" name="formProduct[categoryId]" data-live-search="true" data-size="8">
                                         {% for category in categories %}
-                                            <option {{ product is defined ? category.id == product.categoryId ? 'selected="selected"' : '' : '' }} value="{{ category.id }}">{{ category.name }}</option>
+                                            <option {{ product is defined ? category.id == product.categoryId ? 'selected="selected"' : '' : '' }} data-content="{{ category.name }}" value="{{ category.id }}">{{ category.name }}</option>
+                                            {% if category.children | length > 0 %}
+                                                {% for child in category.children %}
+                                                    <option {{ product is defined ? child.id == product.categoryId ? 'selected="selected"' : '' : '' }} data-content="&emsp;&emsp;{{ child.name }}" value="{{ child.id }}">--------{{ child.name }}</option>
+                                                {% endfor %}
+                                            {% endif %}
                                         {% endfor %}
                                     </select>
                                 </div>
@@ -127,7 +135,7 @@
                                     <span class="required" aria-required="true"> * </span>
                                 </label>
                                 <div class="col-md-9">
-                                    <textarea id="summernote" name="formProduct[description]"></textarea>
+                                    <textarea id="summernote" name="formProduct[description]">{{ product is defined ? product.description | raw : "" }}</textarea>
                                 </div>
                             </div>
                         </div>

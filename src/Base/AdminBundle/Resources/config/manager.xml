@@ -14,5 +14,9 @@
     <service class="Base\AdminBundle\Manager\ProductManager" id="base_admin.manager.product_manager">
         <argument id="base_admin.repository_doctrine.product_repository" type="service"/>
     </service>
+
+    <service class="Base\AdminBundle\Manager\BannerManager" id="base_admin.manager.banner_manager">
+        <argument id="base_admin.repository_doctrine.banner_repository" type="service"/>
+    </service>
 </services>
 </container>

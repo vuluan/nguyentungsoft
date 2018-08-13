@@ -171,7 +171,8 @@ class ProductRepository extends Repository implements ProductRepositoryInterface
     public function delete(Product $product)
     {
         try {
-            $this->entityManager->remove($product);
+            $product->setRemovedRecord(true);
+            $this->entityManager->persist($product);
             $this->entityManager->flush();
             return true;
         } catch (\Exception $e) {

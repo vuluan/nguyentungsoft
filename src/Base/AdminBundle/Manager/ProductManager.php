@@ -2,7 +2,6 @@
 
 namespace Base\AdminBundle\Manager;
 
-use Base\AdminBundle\Entity\Category;
 use Base\AdminBundle\Entity\Product;
 use Base\AdminBundle\Repository\ProductRepositoryInterface;
 

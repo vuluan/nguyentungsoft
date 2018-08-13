@@ -52,7 +52,7 @@ class CategoryRepository extends Repository implements CategoryRepositoryInterfa
                 ->setParameter('name', '%' . $criteria['name'] . '%');
         }
 
-        if (!empty($criteria['parentId'])) {
+        if (isset($criteria['parentId'])) {
             $queryBuilder->andWhere('c.parentId = :parentId')
                 ->setParameter('parentId', $criteria['parentId']);
         }
@@ -176,7 +176,8 @@ class CategoryRepository extends Repository implements CategoryRepositoryInterfa
     public function delete(Category $category)
     {
         try {
-            $this->entityManager->remove($category);
+            $category->setRemovedRecord(true);
+            $this->entityManager->persist($category);
             $this->entityManager->flush();
             return true;
         } catch (\Exception $e) {

@@ -90,7 +90,7 @@ class ProductController extends BaseController
                 $product->setName($form["name"] ?? "");
                 $product->setCategoryId($form["categoryId"] ?? 0);
                 if (isset($files["mainImage"])) {
-                    if (!is_null($product->getMainImage())) {
+                    if (!is_null($product->getMainImage()) && $product->getMainImage() != "") {
                         $this->fileUploader->removeFile($product->getMainImage());
                     }
                     $fileName = $this->fileUploader->upload($files["mainImage"]);
@@ -155,5 +155,20 @@ class ProductController extends BaseController
             'products' => $products,
             'paginationView' => $paginationView
         ]);
+    }
+
+    /**
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\JsonResponse
+     */
+    public function removeProduct(Request $request) {
+        $id = $request->request->get('id');
+        $product = $this->productManager->findOneById($id);
+        if ($product instanceof Product) {
+            $this->productManager->delete($product);
+            return $this->responseWithSuccess();
+        } else {
+            return $this->responseWithError();
+        }
     }
 }

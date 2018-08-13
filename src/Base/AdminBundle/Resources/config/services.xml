@@ -16,5 +16,33 @@
     <service class="Base\AdminBundle\Repository\Doctrine\ProductRepository" id="base_admin.repository_doctrine.product_repository">
         <argument id="Doctrine\ORM\EntityManagerInterface" type="service"/>
     </service>
+
+    <service class="Base\AdminBundle\Repository\Doctrine\BannerRepository" id="base_admin.repository_doctrine.banner_repository">
+        <argument id="Doctrine\ORM\EntityManagerInterface" type="service"/>
+    </service>
+
+    <service class="Base\AdminBundle\Twig\ResizeImageExtension" id="base_admin.twig.resize_image_extension">
+        <call method="initRuntime">
+            <argument id="Twig_Environment" type="service"/>
+        </call>
+        <tag name="twig.extension"/>
+    </service>
+
+    <service class="Base\AdminBundle\Twig\GetAccountLoginExtension" id="base_admin.twig.get_account_login_extension">
+        <argument id="base_admin.session.shopping_session" type="service"/>
+        <call method="initRuntime">
+            <argument id="Twig_Environment" type="service"/>
+        </call>
+        <tag name="twig.extension"/>
+    </service>
+
+    <service class="Base\AdminBundle\Session\ShoppingSession" id="base_admin.session.shopping_session">
+        <argument id="session" type="service"/>
+    </service>
+
+    <service class="Base\AdminBundle\Service\GetCategoryTree" id="base_admin.service.get_category_tree">
+        <argument id="base_admin.manager.category_manager" type="service"/>
+    </service>
+
 </services>
 </container>

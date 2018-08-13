@@ -1,7 +1,7 @@
 base_admin_ajax_check_login:
   path: /check-login
   defaults: { _controller: base_admin.controller_api.login_controller:checkLoginAction }
-  methods: [GET]
+  methods: [POST]
 
 base_admin_ajax_update_account:
   path: /update-account
@@ -11,6 +11,11 @@ base_admin_ajax_update_account:
 base_admin_ajax_list_account:
   path: /list-account
   defaults: { _controller: base_admin.controller_api.account_controller:getListAccount }
+  methods: [POST, GET]
+
+base_admin_ajax_delete_account:
+  path: /delete-account
+  defaults: { _controller: base_admin.controller_api.account_controller:removeAccount }
   methods: [POST, GET]
 
 base_admin_ajax_update_category:
@@ -23,6 +28,11 @@ base_admin_ajax_list_category:
   defaults: { _controller: base_admin.controller_api.category_controller:getListCategory }
   methods: [POST, GET]
 
+base_admin_ajax_delete_category:
+  path: /delete-category
+  defaults: { _controller: base_admin.controller_api.category_controller:removeCategory }
+  methods: [POST, GET]
+
 base_admin_ajax_update_product:
   path: /update-product
   defaults: { _controller: base_admin.controller_api.product_controller:updateAction }
@@ -31,4 +41,24 @@ base_admin_ajax_update_product:
 base_admin_ajax_list_product:
   path: /list-product
   defaults: { _controller: base_admin.controller_api.product_controller:getListProduct }
+  methods: [POST, GET]
+
+base_admin_ajax_delete_product:
+  path: /delete-product
+  defaults: { _controller: base_admin.controller_api.product_controller:removeProduct }
+  methods: [POST, GET]
+
+base_admin_ajax_update_banner:
+  path: /update-banner
+  defaults: { _controller: base_admin.controller_api.banner_controller:updateAction }
+  methods: [POST]
+
+base_admin_ajax_list_banner:
+  path: /list-banner
+  defaults: { _controller: base_admin.controller_api.banner_controller:getListBanner }
+  methods: [POST, GET]
+
+base_admin_ajax_delete_banner:
+  path: /delete-banner
+  defaults: { _controller: base_admin.controller_api.banner_controller:removeBanner }
   methods: [POST, GET]

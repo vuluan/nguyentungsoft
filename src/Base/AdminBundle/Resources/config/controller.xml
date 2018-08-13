@@ -5,6 +5,7 @@
 <services>
     <service class="Base\AdminBundle\Controller\Api\LoginController" id="base_admin.controller_api.login_controller">
         <argument id="base_admin.manager.account_manager" type="service"/>
+        <argument id="base_admin.session.shopping_session" type="service"/>
         <call method="setContainer">
             <argument id="service_container" type="service"/>
         </call>
@@ -35,5 +36,19 @@
         </call>
     </service>
 
+    <service class="Base\AdminBundle\Controller\Api\BannerController" id="base_admin.controller_api.banner_controller">
+        <argument id="base_admin.manager.banner_manager" type="service"/>
+        <argument id="Base\AdminBundle\Pagination\PaginationHelper" type="service"/>
+        <argument id="base_admin.service.file_uploader" type="service"/>
+        <call method="setContainer">
+            <argument id="service_container" type="service"/>
+        </call>
+    </service>
+
+    <service class="Base\AdminBundle\Controller\LoginController" id="base_admin.controller.login_controller">
+        <call method="setContainer">
+            <argument id="service_container" type="service"/>
+        </call>
+    </service>
 </services>
 </container>

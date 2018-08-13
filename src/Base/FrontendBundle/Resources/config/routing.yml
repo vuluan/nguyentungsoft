@@ -1,0 +1,7 @@
+base_frontend:
+    resource: "@BaseFrontendBundle/Resources/config/routing/frontend.yml"
+    prefix: /
+
+base_frontend_ajax:
+    resource: "@BaseFrontendBundle/Resources/config/routing/api-routing.yml"
+    prefix: /api

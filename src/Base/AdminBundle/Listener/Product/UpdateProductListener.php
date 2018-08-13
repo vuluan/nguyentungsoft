@@ -5,6 +5,7 @@ namespace Base\AdminBundle\Listener\Product;
 use Base\AdminBundle\Entity\Product;
 use Base\AdminBundle\Manager\CategoryManager;
 use Base\AdminBundle\Manager\ProductManager;
+use Base\AdminBundle\Service\GetCategoryTree;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Base\AdminBundle\BaseAdminBundleEvents;
 use Base\AdminBundle\Event\ControllerPreRenderEvent;
@@ -26,16 +27,24 @@ class UpdateProductListener implements EventSubscriberInterface
     private $categoryManager;
 
     /**
+     * @var GetCategoryTree
+     */
+    private $getCategoryTree;
+
+    /**
      * UpdateProductListener constructor.
      * @param ProductManager $productManager
      * @param CategoryManager $categoryManager
+     * @param GetCategoryTree $getCategoryTree
      */
     public function __construct(
         ProductManager $productManager,
-        CategoryManager $categoryManager
+        CategoryManager $categoryManager,
+        GetCategoryTree $getCategoryTree
     ){
         $this->productManager = $productManager;
         $this->categoryManager = $categoryManager;
+        $this->getCategoryTree = $getCategoryTree;
     }
 
     /**
@@ -60,12 +69,8 @@ class UpdateProductListener implements EventSubscriberInterface
             return;
         }
 
-        $criteria = [
-            'removedRecord' => false,
-            'active' => true,
-        ];
+        $categories = $this->getCategoryTree->buildTree();
 
-        $categories = $this->categoryManager->findByNotPaging($criteria, '');
         $event->setParameter('categories', $categories);
 
         $product = $this->productManager->findOneById($productId);

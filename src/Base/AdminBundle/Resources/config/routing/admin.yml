@@ -2,9 +2,17 @@ base_admin_dashboard:
   path: /
   defaults: { _controller: BaseAdminBundle:Dashboard:index }
 
-base_admin_dashboard_login:
+base_admin_login:
   path: /login
-  defaults: { _controller: BaseAdminBundle:Dashboard:login }
+  defaults: { _controller: BaseAdminBundle:Login:index }
+
+base_admin_logout:
+  path: /logout
+  defaults: { _controller: BaseAdminBundle:Dashboard:logout }
+
+base_admin_profile:
+  path: /profile
+  defaults: { _controller: BaseAdminBundle:Dashboard:profile }
 
 base_admin_account_index:
   path: /account
@@ -35,6 +43,17 @@ base_admin_product_index:
 base_admin_product_update:
   path: /product/update/{id}
   defaults: { _controller: BaseAdminBundle:Product:update, id: 0 }
+  methods: [GET]
+  requirements:
+            id:  \d+
+
+base_admin_banner_index:
+  path: /banner
+  defaults: { _controller: BaseAdminBundle:Banner:index }
+
+base_admin_banner_update:
+  path: /banner/update/{id}
+  defaults: { _controller: BaseAdminBundle:Banner:update, id: 0 }
   methods: [GET]
   requirements:
             id:  \d+

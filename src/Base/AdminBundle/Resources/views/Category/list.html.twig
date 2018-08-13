@@ -28,6 +28,7 @@
                 <td> {{ item.updatedDate.format('d/M/Y H:i') }} </td>
                 <td>
                     <a href="{{ path('base_admin_category_update', { 'id': item.id }) }}" class="btn btn-sm green-meadow"><i class="fa fa-edit"></i> Edit </a>
+                    <a href="javascript:;" onclick="PortletAjax.removeContent({{ item.id }})" class="btn btn-sm btn-danger"><i class="fa fa-remove"></i> Delete </a>
                 </td>
             </tr>
         {% endfor %}

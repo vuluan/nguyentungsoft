@@ -26,7 +26,13 @@
                 </td>
                 <td>
                     {% if item.mainImage is not null and item.mainImage | trim != "" %}
-                        <img src="{{ '/products/' ~ item.mainImage }}" alt="">
+                        <div class="focuspoint"
+                             data-focus-x="0"
+                             data-focus-y="0"
+                             data-image-w="100"
+                             data-image-h="100">
+                            <img src="{{ resizeImage('/products/' ~ item.mainImage, 100, 100, 2) }}" alt="">
+                        </div>
                     {% else %}
                         <img src="http://www.placehold.it/100x100/EFEFEF/AAAAAA&text=no+image" alt="">
                     {% endif %}
@@ -36,6 +42,7 @@
                 <td> {{ item.updatedDate.format('d/M/Y H:i') }} </td>
                 <td>
                     <a href="{{ path('base_admin_product_update', { 'id': item.id }) }}" class="btn btn-sm green-meadow"><i class="fa fa-edit"></i> Edit </a>
+                    <a href="javascript:;" onclick="PortletAjax.removeContent({{ item.id }})" class="btn btn-sm btn-danger"><i class="fa fa-remove"></i> Delete </a>
                 </td>
             </tr>
         {% endfor %}

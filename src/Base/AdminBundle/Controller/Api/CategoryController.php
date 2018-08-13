@@ -123,4 +123,19 @@ class CategoryController extends BaseController
             'paginationView' => $paginationView
         ]);
     }
+
+    /**
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\JsonResponse
+     */
+    public function removeCategory(Request $request) {
+        $id = $request->request->get('id');
+        $category = $this->categoryManager->findOneById($id);
+        if ($category instanceof Category) {
+            $this->categoryManager->delete($category);
+            return $this->responseWithSuccess();
+        } else {
+            return $this->responseWithError();
+        }
+    }
 }

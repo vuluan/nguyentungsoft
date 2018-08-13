@@ -74,9 +74,15 @@ class Product
     public function __construct()
     {
         $this->setActive(true);
+        $this->setName("");
         $this->setRemovedRecord(false);
         $this->setCreatedDate(new \DateTime());
         $this->setUpdatedDate(new \DateTime());
+        $this->setMainImage("");
+        $this->setPrice(0);
+        $this->setSalePrice(0);
+        $this->setCategoryId(0);
+        $this->setSubImages("");
     }
 
     /**

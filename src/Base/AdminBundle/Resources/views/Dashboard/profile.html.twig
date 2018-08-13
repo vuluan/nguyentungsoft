@@ -1,0 +1,126 @@
+{% extends '@BaseAdmin/Template/layout.html.twig' %}
+
+{% block body %}
+    {# account \Base\AdminBundle\Entity\Account #}
+    <!-- BEGIN PAGE HEADER-->
+    <!-- BEGIN PAGE BAR -->
+    <div class="page-bar">
+        <ul class="page-breadcrumb">
+            <li>
+                <a href="{{ path('base_admin_dashboard') }}">Dashboard</a>
+                <i class="fa fa-circle"></i>
+            </li>
+            <li>
+                <span>Update Profile</span>
+            </li>
+        </ul>
+    </div>
+    <!-- END PAGE BAR -->
+    <!-- BEGIN PAGE TITLE-->
+    <h1 class="page-title">Update Profile
+    </h1>
+    <!-- END PAGE TITLE-->
+    <!-- END PAGE HEADER-->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="portlet light portlet-fit portlet-form bordered">
+                <div class="portlet-title">
+                    <div class="caption">
+                        <i class="icon-bubble font-green"></i>
+                        <span class="caption-subject font-green bold uppercase">Update Profile</span>
+                    </div>
+                </div>
+                <div class="portlet-body">
+                    <!-- BEGIN FORM-->
+                    <form action="#" id="formAccount" name="formAccount" class="form-horizontal" novalidate="novalidate">
+                        <input type="hidden" name="formAccount[id]" id="accountId" value="{{ account is defined ? account.id : '0' }}">
+                        <div class="form-body">
+                            <div class="alert alert-danger display-hide">
+                                <button class="close" data-close="alert"></button> You have some form errors. Please check below. </div>
+                            <div class="alert alert-success display-hide">
+                                <button class="close" data-close="alert"></button> Your form validation is successful! </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-3">Active</label>
+                                <div class="col-md-4">
+                                    <div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-small bootstrap-switch-id-test bootstrap-switch-animate">
+                                        <div class="bootstrap-switch-container">
+                                            <input type="checkbox" disabled="disabled" class="make-switch" {{ account is defined ? account.active ? 'checked="checked"' : '' : '' }} name="formAccount[active]" data-size="mini">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group  margin-top-20">
+                                <label class="control-label col-md-3">Name
+                                    <span class="required" aria-required="true"> * </span>
+                                </label>
+                                <div class="col-md-4">
+                                    <div class="input-icon right">
+                                        <i class="fa"></i>
+                                        <input type="text" class="form-control" value="{{ account is defined ? account.name : '' }}" name="formAccount[name]">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-3">Email
+                                    <span class="required" aria-required="true"> * </span>
+                                </label>
+                                <div class="col-md-4">
+                                    <div class="input-icon right">
+                                        <i class="fa"></i>
+                                        <input type="email" class="form-control" value="{{ account is defined ? account.email : '' }}" name="formAccount[email]">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-3">Username
+                                    <span class="required" aria-required="true"> * </span>
+                                </label>
+                                <div class="col-md-4">
+                                    <div class="input-icon right">
+                                        <i class="fa"></i>
+                                        <input type="text" class="form-control" value="{{ account is defined ? account.username : '' }}" name="formAccount[username]">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-3">Password
+                                    {% if account is not defined %}
+                                        <span class="required" aria-required="true"> * </span>
+                                    {% endif %}
+                                </label>
+                                <div class="col-md-4">
+                                    <div class="input-icon right">
+                                        <i class="fa"></i>
+                                        <input type="password" class="form-control" name="formAccount[password]">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-actions">
+                            <div class="row">
+                                <div class="col-md-offset-3 col-md-9">
+                                    <button type="submit" class="btn green">Submit</button>
+                                    <a href="{{ path('base_admin_account_index') }}" class="btn default">Cancel</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- END FORM-->
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block page_level_plugin %}
+    <script src="{{ absolute_url(asset('assets/global/plugins/select2/js/select2.full.min.js')) }}" type="text/javascript"></script>
+    <script src="{{ absolute_url(asset('assets/global/plugins/jquery-validation/js/jquery.validate.min.js')) }}" type="text/javascript"></script>
+    <script src="{{ absolute_url(asset('assets/global/plugins/jquery-validation/js/additional-methods.min.js')) }}" type="text/javascript"></script>
+    <script src="{{ absolute_url(asset('assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js')) }}" type="text/javascript"></script>
+    <script src="{{ absolute_url(asset('assets/global/plugins/bootstrap-toastr/toastr.min.js')) }}" type="text/javascript"></script>
+{% endblock %}
+
+{% block page_level_script %}
+    <script src="{{ absolute_url(asset('assets/pages/scripts/form-validation-account.min.js')) }}" type="text/javascript"></script>
+    <script src="{{ absolute_url(asset('assets/pages/scripts/ui-toastr.min.js')) }}" type="text/javascript"></script>
+{% endblock %}

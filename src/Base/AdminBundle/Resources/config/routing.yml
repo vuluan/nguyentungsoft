@@ -1,6 +1,6 @@
 base_admin_account:
     resource: "@BaseAdminBundle/Resources/config/routing/admin.yml"
-    prefix: /admin
+    prefix: /
 
 base_admin_ajax:
     resource: "@BaseAdminBundle/Resources/config/routing/api-routing.yml"
