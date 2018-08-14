@@ -5,6 +5,8 @@
 <services>
     <service class="Base\AdminBundle\Service\FileUploader" id="base_admin.service.file_uploader"/>
 
+    <service class="Base\AdminBundle\Service\SlugGenerator" id="base_admin.service.slug_generator"/>
+
     <service class="Base\AdminBundle\Repository\Doctrine\AccountRepository" id="base_admin.repository_doctrine.account_repository">
         <argument id="Doctrine\ORM\EntityManagerInterface" type="service"/>
     </service>

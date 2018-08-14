@@ -21,6 +21,11 @@ class Product
     /**
      * @var string
      */
+    private $slug;
+
+    /**
+     * @var string
+     */
     private $mainImage;
 
     /**
@@ -75,6 +80,7 @@ class Product
     {
         $this->setActive(true);
         $this->setName("");
+        $this->setSlug("");
         $this->setRemovedRecord(false);
         $this->setCreatedDate(new \DateTime());
         $this->setUpdatedDate(new \DateTime());
@@ -115,6 +121,22 @@ class Product
     public function setName(string $name)
     {
         $this->name = $name;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSlug(): string
+    {
+        return $this->slug;
+    }
+
+    /**
+     * @param string $slug
+     */
+    public function setSlug(string $slug)
+    {
+        $this->slug = $slug;
     }
 
     /**

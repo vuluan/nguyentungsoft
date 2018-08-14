@@ -52,9 +52,19 @@ class ProductRepository extends Repository implements ProductRepositoryInterface
                 ->setParameter('name', '%' . $criteria['name'] . '%');
         }
 
+        if (!empty($criteria['slug'])) {
+            $queryBuilder->andWhere('c.slug = :slug')
+                ->setParameter('slug', $criteria['slug']);
+        }
+
         if (!empty($criteria['categoryId'])) {
             $queryBuilder->andWhere('c.categoryId = :categoryId')
                 ->setParameter('categoryId', $criteria['categoryId']);
+        }
+
+        if (!empty($criteria['exceptId'])) {
+            $queryBuilder->andWhere('c.id != :exceptId')
+                ->setParameter('exceptId', $criteria['exceptId']);
         }
 
         if (!empty($criteria['fromCreatedDate'])) {

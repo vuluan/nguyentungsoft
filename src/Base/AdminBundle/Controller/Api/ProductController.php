@@ -8,6 +8,7 @@ use Base\AdminBundle\Manager\ProductManager;
 use Base\AdminBundle\Pagination\PaginationHelper;
 use Base\AdminBundle\Pagination\Paginator;
 use Base\AdminBundle\Service\FileUploader;
+use Base\AdminBundle\Service\SlugGenerator;
 use Base\AdminBundle\Util\RequestHelper;
 use Symfony\Component\HttpFoundation\Request;
 
@@ -34,20 +35,28 @@ class ProductController extends BaseController
     private $fileUploader;
 
     /**
+     * @var SlugGenerator
+     */
+    private $slugGenerator;
+
+    /**
      * CategoryController constructor.
      * @param ProductManager $productManager
      * @param PaginationHelper $paginationHelper
      * @param FileUploader $fileUploader
+     * @param SlugGenerator $slugGenerator
      */
     public function __construct(
         ProductManager $productManager,
         PaginationHelper $paginationHelper,
-        FileUploader $fileUploader
+        FileUploader $fileUploader,
+        SlugGenerator $slugGenerator
     ) {
         parent::__construct();
         $this->productManager = $productManager;
         $this->paginationHelper = $paginationHelper;
         $this->fileUploader = $fileUploader;
+        $this->slugGenerator = $slugGenerator;
         $this->fileUploader->setTargetDir('products');
     }
 
@@ -59,6 +68,12 @@ class ProductController extends BaseController
     {
         $form = $request->request->get('formProduct');
         $files = $request->files->get('formProduct');
+
+        $slug = $this->slugGenerator->generate($form["name"]);
+        if ($this->checkSlugExist($form['id'], $slug)) {
+            return $this->responseWithError('Product slug is exist in other product!');
+        }
+
         if ($form['id'] === '0') {
             $product = new Product();
             if (isset($form["active"])) {
@@ -67,6 +82,7 @@ class ProductController extends BaseController
                 $product->setActive(false);
             }
             $product->setName($form["name"] ?? "");
+            $product->setSlug($slug);
             $product->setCategoryId($form["categoryId"] ?? 0);
             if (isset($files["mainImage"])) {
                 $fileName = $this->fileUploader->upload($files["mainImage"]);
@@ -88,6 +104,7 @@ class ProductController extends BaseController
                     $product->setActive(false);
                 }
                 $product->setName($form["name"] ?? "");
+                $product->setSlug($slug);
                 $product->setCategoryId($form["categoryId"] ?? 0);
                 if (isset($files["mainImage"])) {
                     if (!is_null($product->getMainImage()) && $product->getMainImage() != "") {
@@ -112,6 +129,23 @@ class ProductController extends BaseController
         } else {
             return $this->responseWithError();
         }
+    }
+
+    /**
+     * @param string $id
+     * @param string $slug
+     * @return bool
+     */
+    public function checkSlugExist(string $id, string $slug) {
+        $criteria = [
+            'slug' => $slug,
+            'exceptId' => $id
+        ];
+        $products = $this->productManager->findByNotPaging($criteria, '');
+        if (count($products) > 0) {
+            return true;
+        }
+        return false;
     }
 
     /**

@@ -28,9 +28,10 @@
     </service>
 
     <service class="Base\AdminBundle\Controller\Api\ProductController" id="base_admin.controller_api.product_controller">
-        <argument id="Base\AdminBundle\Manager\ProductManager" type="service"/>
+        <argument id="base_admin.manager.product_manager" type="service"/>
         <argument id="Base\AdminBundle\Pagination\PaginationHelper" type="service"/>
         <argument id="base_admin.service.file_uploader" type="service"/>
+        <argument id="base_admin.service.slug_generator" type="service"/>
         <call method="setContainer">
             <argument id="service_container" type="service"/>
         </call>

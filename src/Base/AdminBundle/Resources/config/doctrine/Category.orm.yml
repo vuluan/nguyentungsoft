@@ -12,6 +12,11 @@ Base\AdminBundle\Entity\Category:
             nullable: true
             length: 255
             column: name
+        slug:
+            type: string
+            nullable: true
+            length: 255
+            column: slug
         parentId:
             type: integer
             column: parentId
