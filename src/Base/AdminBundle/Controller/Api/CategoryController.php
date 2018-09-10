@@ -7,6 +7,7 @@ use Base\AdminBundle\Entity\Category;
 use Base\AdminBundle\Manager\CategoryManager;
 use Base\AdminBundle\Pagination\PaginationHelper;
 use Base\AdminBundle\Pagination\Paginator;
+use Base\AdminBundle\Service\SlugGenerator;
 use Base\AdminBundle\Util\RequestHelper;
 use Symfony\Component\HttpFoundation\Request;
 
@@ -28,17 +29,25 @@ class CategoryController extends BaseController
     private $paginationHelper;
 
     /**
+     * @var SlugGenerator
+     */
+    private $slugGenerator;
+
+    /**
      * CategoryController constructor.
      * @param CategoryManager $categoryManager
      * @param PaginationHelper $paginationHelper
+     * @param SlugGenerator $slugGenerator
      */
     public function __construct(
         CategoryManager $categoryManager,
-        PaginationHelper $paginationHelper
+        PaginationHelper $paginationHelper,
+        SlugGenerator $slugGenerator
     ) {
         parent::__construct();
         $this->categoryManager = $categoryManager;
         $this->paginationHelper = $paginationHelper;
+        $this->slugGenerator = $slugGenerator;
     }
 
     /**
@@ -48,6 +57,12 @@ class CategoryController extends BaseController
     public function updateAction(Request $request)
     {
         $form = $request->request->get('formCategory');
+
+        $slug = $this->slugGenerator->generate($form["name"]);
+        if ($this->checkSlugExist($form['id'], $slug)) {
+            return $this->responseWithError('Category slug is exist in other category!');
+        }
+
         if ($form['id'] === '0') {
             $category = new Category();
             if (isset($form["active"])) {
@@ -56,6 +71,11 @@ class CategoryController extends BaseController
                 $category->setActive(false);
             }
             $category->setName($form["name"] ?? "");
+            $category->setSeoTitle($form["seoTitle"] ?? "");
+            $category->setSeoDescription($form["seoDescription"] ?? "");
+            $category->setSeoKeyword($form["seoKeyword"] ?? "");
+            $category->setSeoTitle($form["seoTitle"] ?? "");
+            $category->setSlug($slug);
             $category->setParentId($form["parentId"] ?? 0);
             $result = $this->categoryManager->save($category);
         } else {
@@ -67,6 +87,10 @@ class CategoryController extends BaseController
                     $category->setActive(false);
                 }
                 $category->setName($form["name"] ?? "");
+                $category->setSeoTitle($form["seoTitle"] ?? "");
+                $category->setSeoDescription($form["seoDescription"] ?? "");
+                $category->setSeoKeyword($form["seoKeyword"] ?? "");
+                $category->setSlug($slug);
                 $category->setParentId($form["parentId"] ?? 0);
                 $result = $this->categoryManager->save($category);
             } else {
@@ -79,6 +103,23 @@ class CategoryController extends BaseController
         } else {
             return $this->responseWithError();
         }
+    }
+
+    /**
+     * @param string $id
+     * @param string $slug
+     * @return bool
+     */
+    public function checkSlugExist(string $id, string $slug) {
+        $criteria = [
+            'slug' => $slug,
+            'exceptId' => $id
+        ];
+        $categories = $this->categoryManager->findByNotPaging($criteria, '');
+        if (count($categories) > 0) {
+            return true;
+        }
+        return false;
     }
 
     /**

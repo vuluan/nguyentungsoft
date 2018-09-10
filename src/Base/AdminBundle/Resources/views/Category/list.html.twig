@@ -7,6 +7,7 @@
                 <th> # </th>
                 <th> Status </th>
                 <th> Name </th>
+                <th> Slug </th>
                 <th> Created Date </th>
                 <th> Updated Date </th>
                 <th> Actions </th>
@@ -24,6 +25,7 @@
                     {% endif %}
                 </td>
                 <td> {{ item.name }} </td>
+                <td> {{ item.slug }} </td>
                 <td> {{ item.createdDate.format('d/M/Y H:i') }} </td>
                 <td> {{ item.updatedDate.format('d/M/Y H:i') }} </td>
                 <td>

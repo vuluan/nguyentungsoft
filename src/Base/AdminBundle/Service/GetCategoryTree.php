@@ -36,7 +36,7 @@ class GetCategoryTree
         ];
         $sort = "parentId ASC";
         $allCategory = $this->categoryManager->findByNotPaging($criteria, $sort);
-        $criteria['parentId'] = 0;
+        $criteria['parentId'] = "0";
         $roots = $this->categoryManager->findByNotPaging($criteria, $sort);
         $categoryTree = [];
         /** @var Category $root */

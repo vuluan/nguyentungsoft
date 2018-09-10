@@ -73,7 +73,7 @@
                                         </div>
                                         <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;">
                                             {% if checkMainImage %}
-                                                <img src="{{ '/products/' ~ product.mainImage }}" data-src="{{ '/products/' ~ product.mainImage }}" alt="...">
+                                                <img src="{{ resizeImage(absolute_url(product_directory ~ product.mainImage), 200, 0, 2) }}" data-src="{{ resizeImage(absolute_url(product_directory ~ product.mainImage), 200, 0, 2) }}" alt="{{ product.name }}">
                                             {% else %}
                                                 <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&text=no+image" data-src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&text=no+image" alt="...">
                                             {% endif %}
@@ -136,6 +136,34 @@
                                 </label>
                                 <div class="col-md-9">
                                     <textarea id="summernote" name="formProduct[description]">{{ product is defined ? product.description | raw : "" }}</textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="form-group  margin-top-20">
+                            <label class="control-label col-md-3">SEO Title</label>
+                            <div class="col-md-4">
+                                <div class="input-icon right">
+                                    <i class="fa"></i>
+                                    <input title="" class="form-control" value="{{ product is defined ? product.seoTitle : '' }}" name="formProduct[seoTitle]">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group  margin-top-20">
+                            <label class="control-label col-md-3">SEO Description</label>
+                            <div class="col-md-4">
+                                <div class="input-icon right">
+                                    <i class="fa"></i>
+                                    <input title="" class="form-control" value="{{ product is defined ? product.seoDescription : '' }}" name="formProduct[seoDescription]">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group  margin-top-20">
+                            <label class="control-label col-md-3">SEO Keyword</label>
+                            <div class="col-md-4">
+                                <div class="input-icon right">
+                                    <i class="fa"></i>
+                                    <input title="" class="form-control" value="{{ product is defined ? product.seoKeyword : '' }}" name="formProduct[seoKeyword]">
                                 </div>
                             </div>
                         </div>

@@ -69,13 +69,14 @@
                                     <input type="hidden" id="checkImage" value="{{ checkImage }}">
                                     <div class="fileinput {{ checkImage ? 'fileinput-exists' : 'fileinput-new' }}" data-provides="fileinput">
                                         <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
-                                            <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&text=no+image" data-src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&text=no+image" alt="...">
+                                            <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&text=no+image" data-src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&text=no+image" alt="{{ banner.name }}">
                                         </div>
                                         <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;">
                                             {% if checkImage %}
-                                                <img src="{{ '/banners/' ~ banner.image }}" data-src="{{ '/banners/' ~ banner.image }}" alt="...">
+                                                <img src="{{ resizeImage(absolute_url(banner_directory ~ banner.image), 100, 100, 2) }}"
+                                                     data-src="{{ resizeImage(absolute_url(banner_directory ~ banner.image), 100, 100, 2) }}" alt="{{ banner.name }}">
                                             {% else %}
-                                                <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&text=no+image" data-src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&text=no+image" alt="...">
+                                                <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&text=no+image" data-src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&text=no+image" alt="{{ banner.name }}">
                                             {% endif %}
                                         </div>
                                         <div>

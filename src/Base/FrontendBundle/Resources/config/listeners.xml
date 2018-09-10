@@ -7,5 +7,17 @@
         <argument id="base_admin.service.get_category_tree" type="service"/>
         <tag name="kernel.event_subscriber"/>
     </service>
+
+    <service class="Base\FrontendBundle\Listener\HomePageListener" id="base_frontend.listener.home_page_listener">
+        <argument id="base_admin.manager.banner_manager" type="service"/>
+        <argument id="base_admin.manager.product_manager" type="service"/>
+        <tag name="kernel.event_subscriber"/>
+    </service>
+
+    <service class="Base\FrontendBundle\Listener\ProductDetailListener" id="base_frontend.listener.product_detail_listener">
+        <argument id="base_admin.manager.product_manager" type="service"/>
+        <argument id="base_admin.manager.category_manager" type="service"/>
+        <tag name="kernel.event_subscriber"/>
+    </service>
 </services>
 </container>

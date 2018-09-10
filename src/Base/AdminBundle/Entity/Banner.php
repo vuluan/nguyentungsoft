@@ -9,7 +9,7 @@ namespace Base\AdminBundle\Entity;
 class Banner
 {
     /**
-     * @var int
+     * @var string
      */
     private $id;
 
@@ -53,6 +53,7 @@ class Banner
      */
     public function __construct()
     {
+        $this->setId(md5(uniqid(rand(), true)));
         $this->setActive(true);
         $this->setName("");
         $this->setRemovedRecord(false);
@@ -62,17 +63,17 @@ class Banner
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getId(): int
+    public function getId(): string
     {
         return $this->id;
     }
 
     /**
-     * @param int $id
+     * @param string $id
      */
-    public function setId(int $id)
+    public function setId(string $id)
     {
         $this->id = $id;
     }

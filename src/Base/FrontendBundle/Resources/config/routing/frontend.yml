@@ -1,3 +1,7 @@
 base_frontend_homepage:
   path: /
   defaults: { _controller: BaseFrontendBundle:HomePage:index }
+
+base_frontend_product_detail:
+  path: /san-pham/{slug}
+  defaults: { _controller: BaseFrontendBundle:ProductDetail:index }

@@ -31,17 +31,17 @@
                              data-focus-y="0"
                              data-image-w="100"
                              data-image-h="100">
-                            <img src="{{ resizeImage('/banners/' ~ item.image, 100, 100, 2) }}" alt="">
+                            <img src="{{ resizeImage(absolute_url(banner_directory ~ item.image), 100, 100, 2) }}" alt="{{ item.name }}">
                         </div>
                     {% else %}
-                        <img src="http://www.placehold.it/100x100/EFEFEF/AAAAAA&text=no+image" alt="">
+                        <img src="http://www.placehold.it/100x100/EFEFEF/AAAAAA&text=no+image" alt="{{ item.name }}">
                     {% endif %}
                 </td>
                 <td> {{ item.name }} </td>
                 <td> {{ item.createdDate.format('d/M/Y H:i') }} </td>
                 <td> {{ item.updatedDate.format('d/M/Y H:i') }} </td>
                 <td>
-                    <a href="{{ path('base_admin_product_update', { 'id': item.id }) }}" class="btn btn-sm green-meadow"><i class="fa fa-edit"></i> Edit </a>
+                    <a href="{{ path('base_admin_banner_update', { 'id': item.id }) }}" class="btn btn-sm green-meadow"><i class="fa fa-edit"></i> Edit </a>
                     <a href="javascript:;" onclick="PortletAjax.removeContent({{ item.id }})" class="btn btn-sm btn-danger"><i class="fa fa-remove"></i> Delete </a>
                 </td>
             </tr>

@@ -57,7 +57,14 @@ class ProductController extends BaseController
         $this->paginationHelper = $paginationHelper;
         $this->fileUploader = $fileUploader;
         $this->slugGenerator = $slugGenerator;
-        $this->fileUploader->setTargetDir('products');
+    }
+
+    /**
+     * @param string $fileURL
+     */
+    public function setFileURL(string $fileURL)
+    {
+        $this->fileUploader->setTargetDir($fileURL);
     }
 
     /**
@@ -93,7 +100,9 @@ class ProductController extends BaseController
             $product->setDescription($form["description"] ?? "");
             $product->setPrice($form["price"] ? (float)$form["price"] : 0);
             $product->setSalePrice($form["salePrice"] ? (float)$form["salePrice"] : 0);
-
+            $product->setSeoTitle($form["seoTitle"] ?? "");
+            $product->setSeoDescription($form["seoDescription"] ?? "");
+            $product->setSeoKeyword($form["seoKeyword"] ?? "");
             $result = $this->productManager->save($product);
         } else {
             $product = $this->productManager->findOneById($form['id']);
@@ -118,6 +127,9 @@ class ProductController extends BaseController
                 $product->setDescription($form["description"] ?? "");
                 $product->setPrice($form["price"] ? (float)$form["price"] : 0);
                 $product->setSalePrice($form["salePrice"] ? (float)$form["salePrice"] : 0);
+                $product->setSeoTitle($form["seoTitle"] ?? "");
+                $product->setSeoDescription($form["seoDescription"] ?? "");
+                $product->setSeoKeyword($form["seoKeyword"] ?? "");
                 $result = $this->productManager->save($product);
             } else {
                 $result = false;

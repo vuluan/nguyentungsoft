@@ -30,6 +30,13 @@
         <tag name="twig.extension"/>
     </service>
 
+    <service class="Base\AdminBundle\Twig\FormatCurrencyExtension" id="base_admin.twig.format_currency_extension">
+        <call method="initRuntime">
+            <argument id="twig" type="service"/>
+        </call>
+        <tag name="twig.extension"/>
+    </service>
+
     <service class="Base\AdminBundle\Twig\GetAccountLoginExtension" id="base_admin.twig.get_account_login_extension">
         <argument id="base_admin.session.shopping_session" type="service"/>
         <call method="initRuntime">

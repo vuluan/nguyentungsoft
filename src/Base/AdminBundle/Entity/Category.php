@@ -9,7 +9,7 @@ namespace Base\AdminBundle\Entity;
 class Category
 {
     /**
-     * @var int
+     * @var string
      */
     private $id;
 
@@ -24,15 +24,29 @@ class Category
     private $slug;
 
     /**
-     * @var int
+     * @var string
      */
     private $parentId;
-
 
     /**
      * @var array
      */
     private $children;
+
+    /**
+     * @var string
+     */
+    private $seoTitle;
+
+    /**
+     * @var string
+     */
+    private $seoDescription;
+
+    /**
+     * @var string
+     */
+    private $seoKeyword;
 
     /**
      * @var bool
@@ -59,26 +73,30 @@ class Category
      */
     public function __construct()
     {
+        $this->setId(md5(uniqid(rand(), true)));
         $this->setActive(true);
         $this->setName("");
         $this->setSlug("");
+        $this->setSeoTitle("");
+        $this->setSeoDescription("");
+        $this->setSeoKeyword("");
         $this->setRemovedRecord(false);
         $this->setCreatedDate(new \DateTime());
         $this->setUpdatedDate(new \DateTime());
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getId(): int
+    public function getId(): string
     {
         return $this->id;
     }
 
     /**
-     * @param int $id
+     * @param string $id
      */
-    public function setId(int $id)
+    public function setId(string $id)
     {
         $this->id = $id;
     }
@@ -100,9 +118,9 @@ class Category
     }
 
     /**
-     * @return string
+     * @return string | null
      */
-    public function getSlug(): string
+    public function getSlug()
     {
         return $this->slug;
     }
@@ -116,17 +134,17 @@ class Category
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getParentId(): int
+    public function getParentId(): string
     {
         return $this->parentId;
     }
 
     /**
-     * @param int $parentId
+     * @param string $parentId
      */
-    public function setParentId(int $parentId)
+    public function setParentId(string $parentId)
     {
         $this->parentId = $parentId;
     }
@@ -145,6 +163,54 @@ class Category
     public function setChildren(array $children)
     {
         $this->children = $children;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSeoTitle()
+    {
+        return $this->seoTitle;
+    }
+
+    /**
+     * @param string $seoTitle
+     */
+    public function setSeoTitle(string $seoTitle)
+    {
+        $this->seoTitle = $seoTitle;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSeoDescription()
+    {
+        return $this->seoDescription;
+    }
+
+    /**
+     * @param string $seoDescription
+     */
+    public function setSeoDescription(string $seoDescription)
+    {
+        $this->seoDescription = $seoDescription;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSeoKeyword()
+    {
+        return $this->seoKeyword;
+    }
+
+    /**
+     * @param string $seoKeyword
+     */
+    public function setSeoKeyword(string $seoKeyword)
+    {
+        $this->seoKeyword = $seoKeyword;
     }
 
     /**
@@ -210,5 +276,4 @@ class Category
     {
         $this->updatedDate = $updatedDate;
     }
-
 }

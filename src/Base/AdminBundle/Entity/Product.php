@@ -9,7 +9,7 @@ namespace Base\AdminBundle\Entity;
 class Product
 {
     /**
-     * @var int
+     * @var string
      */
     private $id;
 
@@ -22,6 +22,11 @@ class Product
      * @var string
      */
     private $slug;
+
+    /**
+     * @var string
+     */
+    private $linkDetail;
 
     /**
      * @var string
@@ -49,14 +54,44 @@ class Product
     private $salePrice;
 
     /**
-     * @var int
+     * @var string
      */
     private $categoryId;
+
+    /**
+     * @var Category
+     */
+    private $category;
 
     /**
      * @var bool
      */
     private $active;
+
+    /**
+     * @var bool
+     */
+    private $saleStatus;
+
+    /**
+     * @var bool
+     */
+    private $newStatus;
+
+    /**
+     * @var string
+     */
+    private $seoTitle;
+
+    /**
+     * @var string
+     */
+    private $seoDescription;
+
+    /**
+     * @var string
+     */
+    private $seoKeyword;
 
     /**
      * @var bool
@@ -78,9 +113,13 @@ class Product
      */
     public function __construct()
     {
+        $this->setId(md5(uniqid(rand(), true)));
         $this->setActive(true);
         $this->setName("");
         $this->setSlug("");
+        $this->setSeoTitle("");
+        $this->setSeoDescription("");
+        $this->setSeoKeyword("");
         $this->setRemovedRecord(false);
         $this->setCreatedDate(new \DateTime());
         $this->setUpdatedDate(new \DateTime());
@@ -88,21 +127,22 @@ class Product
         $this->setPrice(0);
         $this->setSalePrice(0);
         $this->setCategoryId(0);
+        $this->setCategory(null);
         $this->setSubImages("");
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getId(): int
+    public function getId(): string
     {
         return $this->id;
     }
 
     /**
-     * @param int $id
+     * @param string $id
      */
-    public function setId(int $id)
+    public function setId(string $id)
     {
         $this->id = $id;
     }
@@ -137,6 +177,22 @@ class Product
     public function setSlug(string $slug)
     {
         $this->slug = $slug;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLinkDetail(): string
+    {
+        return sprintf("%s-%s.html", $this->getId(), $this->getSlug());
+    }
+
+    /**
+     * @param string $linkDetail
+     */
+    public function setLinkDetail(string $linkDetail)
+    {
+        $this->linkDetail = $linkDetail;
     }
 
     /**
@@ -220,19 +276,35 @@ class Product
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getCategoryId(): int
+    public function getCategoryId(): string
     {
         return $this->categoryId;
     }
 
     /**
-     * @param int $categoryId
+     * @param string $categoryId
      */
-    public function setCategoryId(int $categoryId)
+    public function setCategoryId(string $categoryId)
     {
         $this->categoryId = $categoryId;
+    }
+
+    /**
+     * @return Category
+     */
+    public function getCategory(): Category
+    {
+        return $this->category;
+    }
+
+    /**
+     * @param Category $category
+     */
+    public function setCategory(Category $category)
+    {
+        $this->category = $category;
     }
 
     /**
@@ -249,6 +321,94 @@ class Product
     public function setActive(bool $active)
     {
         $this->active = $active;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isSaleStatus(): bool
+    {
+        if ($this->salePrice < $this->price) {
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * @param bool $saleStatus
+     */
+    public function setSaleStatus(bool $saleStatus)
+    {
+        $this->saleStatus = $saleStatus;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isNewStatus(): bool
+    {
+        $updateDate = strtotime($this->getUpdatedDate()->format('Y-m-d h:i:s'));
+        $now = strtotime("-1 month");
+        if ($updateDate > $now) {
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * @param bool $newStatus
+     */
+    public function setNewStatus(bool $newStatus)
+    {
+        $this->newStatus = $newStatus;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSeoTitle()
+    {
+        return $this->seoTitle;
+    }
+
+    /**
+     * @param string $seoTitle
+     */
+    public function setSeoTitle(string $seoTitle)
+    {
+        $this->seoTitle = $seoTitle;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSeoDescription()
+    {
+        return $this->seoDescription;
+    }
+
+    /**
+     * @param string $seoDescription
+     */
+    public function setSeoDescription(string $seoDescription)
+    {
+        $this->seoDescription = $seoDescription;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSeoKeyword()
+    {
+        return $this->seoKeyword;
+    }
+
+    /**
+     * @param string $seoKeyword
+     */
+    public function setSeoKeyword(string $seoKeyword)
+    {
+        $this->seoKeyword = $seoKeyword;
     }
 
     /**

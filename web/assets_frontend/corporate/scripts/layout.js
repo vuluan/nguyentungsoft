@@ -312,7 +312,13 @@ var Layout = function () {
             handleSubMenuExt();
             handleMobiToggler();
         },
-
+        handleSameHeight: function () {
+            var jQueryEqualHeight = $('.jQueryEqualHeight');
+            // jQueryEqualHeight.jQueryEqualHeight('.product-item');
+            jQueryEqualHeight.jQueryEqualHeight('.product-item .product-item-title');
+            jQueryEqualHeight.jQueryEqualHeight('.product-item .product-item-price');
+            jQueryEqualHeight.jQueryEqualHeight('.product-item .product-item-add2cart');
+        },
         initUniform: function (els) {
             if (els) {
                 jQuery(els).each(function () {

@@ -9,7 +9,7 @@ namespace Base\AdminBundle\Entity;
 class Account
 {
     /**
-     * @var int
+     * @var string
      */
     private $id;
 
@@ -58,6 +58,7 @@ class Account
      */
     public function __construct()
     {
+        $this->setId(md5(uniqid(rand(), true)));
         $this->setActive(true);
         $this->setRemovedRecord(false);
         $this->setCreatedDate(new \DateTime());
@@ -65,17 +66,17 @@ class Account
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getId(): int
+    public function getId(): string
     {
         return $this->id;
     }
 
     /**
-     * @param int $id
+     * @param string $id
      */
-    public function setId(int $id)
+    public function setId(string $id)
     {
         $this->id = $id;
     }

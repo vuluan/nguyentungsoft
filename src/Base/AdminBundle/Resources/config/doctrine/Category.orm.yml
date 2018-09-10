@@ -4,8 +4,8 @@ Base\AdminBundle\Entity\Category:
     repositoryClass: Base\AdminBundle\Repository\Doctrine\CategoryRepository
     id:
         id:
-            type: integer
-            generator: { strategy: AUTO }
+            type: string
+            length: 255
     fields:
         name:
             type: string
@@ -18,8 +18,24 @@ Base\AdminBundle\Entity\Category:
             length: 255
             column: slug
         parentId:
-            type: integer
+            type: string
+            length: 255
             column: parentId
+        seoTitle:
+            type: string
+            nullable: true
+            length: 255
+            column: seoTitle
+        seoDescription:
+            type: string
+            nullable: true
+            length: 255
+            column: seoDescription
+        seoKeyword:
+            type: string
+            nullable: true
+            length: 255
+            column: seoKeyword
         active:
             type: boolean
             column: active

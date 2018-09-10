@@ -22,6 +22,7 @@
     <service class="Base\AdminBundle\Controller\Api\CategoryController" id="base_admin.controller_api.category_controller">
         <argument id="base_admin.manager.category_manager" type="service"/>
         <argument id="Base\AdminBundle\Pagination\PaginationHelper" type="service"/>
+        <argument id="base_admin.service.slug_generator" type="service"/>
         <call method="setContainer">
             <argument id="service_container" type="service"/>
         </call>
@@ -32,15 +33,22 @@
         <argument id="Base\AdminBundle\Pagination\PaginationHelper" type="service"/>
         <argument id="base_admin.service.file_uploader" type="service"/>
         <argument id="base_admin.service.slug_generator" type="service"/>
+        <call method="setFileURL">
+            <argument>%upload_path%%product_directory%</argument>
+        </call>
         <call method="setContainer">
             <argument id="service_container" type="service"/>
         </call>
     </service>
 
+
     <service class="Base\AdminBundle\Controller\Api\BannerController" id="base_admin.controller_api.banner_controller">
         <argument id="base_admin.manager.banner_manager" type="service"/>
         <argument id="Base\AdminBundle\Pagination\PaginationHelper" type="service"/>
         <argument id="base_admin.service.file_uploader" type="service"/>
+        <call method="setFileURL">
+            <argument>%upload_path%%banner_directory%</argument>
+        </call>
         <call method="setContainer">
             <argument id="service_container" type="service"/>
         </call>

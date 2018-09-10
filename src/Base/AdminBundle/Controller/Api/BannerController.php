@@ -48,7 +48,14 @@ class BannerController extends BaseController
         $this->bannerManager = $bannerManager;
         $this->paginationHelper = $paginationHelper;
         $this->fileUploader = $fileUploader;
-        $this->fileUploader->setTargetDir('banners');
+    }
+
+    /**
+     * @param string $fileURL
+     */
+    public function setFileURL(string $fileURL)
+    {
+        $this->fileUploader->setTargetDir($fileURL);
     }
 
     /**
@@ -89,7 +96,7 @@ class BannerController extends BaseController
                     if (!is_null($banner->getImage()) && $banner->getImage() != "") {
                         $this->fileUploader->removeFile($banner->getImage());
                     }
-                    $fileName = $this->fileUploader->upload($files["mainImage"]);
+                    $fileName = $this->fileUploader->upload($files["image"]);
                     if ($fileName !== false) {
                         $banner->setImage($fileName);
                     }

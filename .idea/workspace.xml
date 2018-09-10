@@ -2,17 +2,65 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31e5aee8-8a52-4d9b-b120-70a2dec6b8fd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Service/SlugGenerator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Twig/FormatCurrencyExtension.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Base/FrontendBundle/Controller/ProductDetailController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Base/FrontendBundle/Listener/HomePageListener.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Base/FrontendBundle/Listener/ProductDetailListener.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Base/FrontendBundle/Resources/views/ProductDetail/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Base/FrontendBundle/Resources/views/Widget/banner.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Base/FrontendBundle/Resources/views/Widget/new_arrivals.html.twig" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/avatar_directory/42d1b5d323adb5e11fbd66ee7af4441e.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/avatar_directory/d03ef7e5e18fa441b25a038b79bfe39e.jpeg" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/products/46c18e781da8be1e0cd8b3dd282297ed.jpeg" afterPath="$PROJECT_DIR$/web/uploads/product/46c18e781da8be1e0cd8b3dd282297ed.jpeg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/products/d4df0840210b2fc5bc644f5e43b86ba5.png" afterPath="$PROJECT_DIR$/web/uploads/product/d4df0840210b2fc5bc644f5e43b86ba5.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/products/de29fa366331c3b1edea390215cb64be.jpeg" afterPath="$PROJECT_DIR$/web/uploads/product/de29fa366331c3b1edea390215cb64be.jpeg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/symfony2.xml" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Controller/Api/BannerController.php" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Controller/Api/BannerController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Controller/Api/CategoryController.php" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Controller/Api/CategoryController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Controller/Api/ProductController.php" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Controller/Api/ProductController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Entity/Account.php" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Entity/Account.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Entity/Banner.php" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Entity/Banner.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Entity/Category.php" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Entity/Category.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Entity/Product.php" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Entity/Product.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Repository/Doctrine/ProductRepository.php" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Repository/Doctrine/ProductRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Listener/Dashboard/DashboardListener.php" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Listener/Dashboard/DashboardListener.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Repository/Doctrine/CategoryRepository.php" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Repository/Doctrine/CategoryRepository.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/controller.xml" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/controller.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/doctrine/Account.orm.yml" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/doctrine/Account.orm.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/doctrine/Banner.orm.yml" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/doctrine/Banner.orm.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/doctrine/Category.orm.yml" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/doctrine/Category.orm.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/doctrine/Product.orm.yml" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/doctrine/Product.orm.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/listeners.xml" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/listeners.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/routing/admin.yml" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/routing/admin.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/services.xml" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/services.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Account/update.html.twig" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Account/update.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Banner/index.html.twig" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Banner/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Banner/list.html.twig" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Banner/list.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Banner/update.html.twig" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Banner/update.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Category/list.html.twig" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Category/list.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Category/update.html.twig" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Category/update.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Dashboard/index.html.twig" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Dashboard/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Product/list.html.twig" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Product/list.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Product/update.html.twig" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Product/update.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Template/layout.html.twig" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Template/layout.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Service/GetCategoryTree.php" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Service/GetCategoryTree.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Service/SlugGenerator.php" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Service/SlugGenerator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/FrontendBundle/BaseFrontendBundleEvents.php" afterPath="$PROJECT_DIR$/src/Base/FrontendBundle/BaseFrontendBundleEvents.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/FrontendBundle/Resources/config/listeners.xml" afterPath="$PROJECT_DIR$/src/Base/FrontendBundle/Resources/config/listeners.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/FrontendBundle/Resources/config/routing/frontend.yml" afterPath="$PROJECT_DIR$/src/Base/FrontendBundle/Resources/config/routing/frontend.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/FrontendBundle/Resources/views/HomePage/index.html.twig" afterPath="$PROJECT_DIR$/src/Base/FrontendBundle/Resources/views/HomePage/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/FrontendBundle/Resources/views/Template/layout.html.twig" afterPath="$PROJECT_DIR$/src/Base/FrontendBundle/Resources/views/Template/layout.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/pages/scripts/form-validation-account.min.js" afterPath="$PROJECT_DIR$/web/assets/pages/scripts/form-validation-account.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/pages/scripts/form-validation-banner.min.js" afterPath="$PROJECT_DIR$/web/assets/pages/scripts/form-validation-banner.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/pages/scripts/form-validation-category.min.js" afterPath="$PROJECT_DIR$/web/assets/pages/scripts/form-validation-category.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/pages/scripts/form-validation-product.min.js" afterPath="$PROJECT_DIR$/web/assets/pages/scripts/form-validation-product.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets_frontend/corporate/css/style.css" afterPath="$PROJECT_DIR$/web/assets_frontend/corporate/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets_frontend/corporate/scripts/layout.js" afterPath="$PROJECT_DIR$/web/assets_frontend/corporate/scripts/layout.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets_frontend/pages/css/slider.css" afterPath="$PROJECT_DIR$/web/assets_frontend/pages/css/slider.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets_frontend/pages/css/style-shop.css" afterPath="$PROJECT_DIR$/web/assets_frontend/pages/css/style-shop.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,42 +71,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ProductController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Controller/Api/ProductController.php">
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Base/FrontendBundle/Resources/views/HomePage/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="68" column="18" lean-forward="false" selection-start-line="68" selection-start-column="18" selection-end-line="68" selection-end-column="18" />
+            <state relative-caret-position="69">
+              <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="form-validation-product.min.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/assets/pages/scripts/form-validation-product.min.js">
+      <file leaf-file-name="banner.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Base/FrontendBundle/Resources/views/Widget/banner.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="87" column="13" lean-forward="false" selection-start-line="87" selection-start-column="13" selection-end-line="87" selection-end-column="13" />
+            <state relative-caret-position="391">
+              <caret line="17" column="59" lean-forward="false" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="59" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductRepository.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Repository/Doctrine/ProductRepository.php">
+      <file leaf-file-name="new_arrivals.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Base/FrontendBundle/Resources/views/Widget/new_arrivals.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="64" column="38" lean-forward="false" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="38" />
+            <state relative-caret-position="251">
+              <caret line="57" column="67" lean-forward="false" selection-start-line="57" selection-start-column="67" selection-end-line="57" selection-end-column="67" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CategoryRepository.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Repository/Doctrine/CategoryRepository.php">
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Base/FrontendBundle/Resources/views/ProductDetail/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="51" column="41" lean-forward="false" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
-              <folding />
+            <state relative-caret-position="345">
+              <caret line="42" column="82" lean-forward="false" selection-start-line="42" selection-start-column="82" selection-end-line="42" selection-end-column="82" />
+              <folding>
+                <element signature="e#1366#1388#0#HTML" expanded="true" />
+                <element signature="e#4174#4308#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -67,51 +118,55 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>classmap</find>
-      <find>admin</find>
-      <find>list-account</find>
-      <find>.page-header.navbar .page-logo .logo-default</find>
-      <find>assets_frontend/</find>
+      <find>ResizeImageExtension</find>
+      <find>New Arrivals</find>
+      <find>HomePageListener</find>
+      <find>new</find>
+      <find>.pi-price</find>
+      <find>.product-item .add2cart</find>
       <find>product-pop-up</find>
-      <find>bg.jpg</find>
-      <find>corporate/img/up.png</find>
-      <find>color-panel hidden-sm</find>
-      <find>check-login</find>
-      <find>api/check-login</find>
-      <find>UpdateProductListener</find>
-      <find>page-logo</find>
-      <find>include</find>
-      <find>font-family</find>
-      <find>front-fa</find>
-      <find>font-fa</find>
-      <find>font</find>
-      <find>sans-serif</find>
-      <find>.ecommerce .site-logo</find>
-      <find>.site-logo</find>
-      <find>.ecommerce .header-navigation</find>
-      <find>image</find>
-      <find>base.controller_render_pre_product</find>
-      <find>Product</find>
-      <find>formBanner[image]</find>
-      <find>mainImage</find>
-      <find>checkImage</find>
-      <find>site-logo</find>
+      <find>Availability</find>
+      <find>product-other-images</find>
+      <find>initUniform</find>
+      <find>init</find>
+      <find>initTwitter</find>
+      <find>initImageZoom</find>
+      <find>.owl-item.active .product-item</find>
+      <find>product-quantity</find>
+      <find>sa</find>
+      <find>MOST POPULAR PRODUCTS</find>
+      <find>.sidebar .dropdown-menu</find>
+      <find>roboto</find>
+      <find>$products</find>
+      <find>review</find>
+      <find>product-page-cart</find>
+      <find>avatar_directory</find>
+      <find>product_directory</find>
+      <find>setFileURL</find>
+      <find>upload_path</find>
       <find>ProductController</find>
+      <find>BannerController</find>
+      <find>resizeImage</find>
+      <find>Sản Phẩm khác</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/web</dir>
       <dir>$PROJECT_DIR$/web/assets/js</dir>
       <dir>$PROJECT_DIR$/web/assets</dir>
       <dir>$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/doctrine</dir>
-      <dir>$PROJECT_DIR$</dir>
       <dir>$PROJECT_DIR$/app/Resources</dir>
-      <dir>$PROJECT_DIR$/src/Base/AdminBundle/Resources/config</dir>
       <dir>$PROJECT_DIR$/app</dir>
       <dir>$PROJECT_DIR$/src</dir>
       <dir>$PROJECT_DIR$/src/Base/AdminBundle</dir>
-      <dir>$PROJECT_DIR$/src/Base/AdminBundle/Resources</dir>
       <dir>$PROJECT_DIR$/web/assets_frontend</dir>
+      <dir>$PROJECT_DIR$/src/Base/AdminBundle/Resources/config</dir>
       <dir>$PROJECT_DIR$/src/Base/FrontendBundle</dir>
+      <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/src/Base/AdminBundle/Resources</dir>
+      <dir>$PROJECT_DIR$/src/Base/FrontendBundle/Resources/views</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -120,57 +175,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/assets/pages/scripts/login-5.min.js" />
-        <option value="$PROJECT_DIR$/web/assets/pages/scripts/form-validation-category.min.js" />
-        <option value="$PROJECT_DIR$/web/assets/pages/scripts/form-validation-account.min.js" />
-        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Category/update.html.twig" />
-        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Listener/Product/UpdateProductListener.php" />
+        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Banner/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/doctrine/Account.orm.yml" />
+        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/doctrine/Banner.orm.yml" />
+        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Entity/Account.php" />
+        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Controller/Api/AccountController.php" />
+        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/routing/admin.yml" />
+        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Entity/Banner.php" />
+        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Listener/Dashboard/DashboardListener.php" />
+        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/listeners.xml" />
+        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Account/update.html.twig" />
+        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Template/layout.html.twig" />
         <option value="$PROJECT_DIR$/src/Base/AdminBundle/Repository/Doctrine/CategoryRepository.php" />
-        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Service/GetCategoryTree.php" />
-        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Product/update.html.twig" />
+        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Service/SlugGenerator.php" />
+        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Category/list.html.twig" />
+        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Dashboard/index.html.twig" />
+        <option value="$PROJECT_DIR$/web/assets_frontend/pages/css/slider.css" />
+        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/services.xml" />
+        <option value="$PROJECT_DIR$/web/assets/pages/scripts/form-validation-account.min.js" />
+        <option value="$PROJECT_DIR$/web/assets/pages/scripts/form-validation-banner.min.js" />
+        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Twig/FormatCurrencyExtension.php" />
+        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/doctrine/Category.orm.yml" />
+        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/doctrine/Product.orm.yml" />
+        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Category/update.html.twig" />
+        <option value="$PROJECT_DIR$/web/assets/pages/scripts/form-validation-category.min.js" />
+        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Entity/Category.php" />
         <option value="$PROJECT_DIR$/src/Base/AdminBundle/Controller/Api/CategoryController.php" />
-        <option value="$PROJECT_DIR$/web/assets/pages/scripts/portlet-ajax.min.js" />
+        <option value="$PROJECT_DIR$/web/assets/pages/scripts/form-validation-product.min.js" />
+        <option value="$PROJECT_DIR$/src/Base/FrontendBundle/Listener/HomePageListener.php" />
+        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Service/GetCategoryTree.php" />
+        <option value="$PROJECT_DIR$/web/assets_frontend/pages/css/style-shop.css" />
+        <option value="$PROJECT_DIR$/web/assets_frontend/corporate/scripts/layout.js" />
         <option value="$PROJECT_DIR$/src/Base/FrontendBundle/BaseFrontendBundleEvents.php" />
-        <option value="$PROJECT_DIR$/src/Base/FrontendBundle/Controller/HomePageController.php" />
-        <option value="$PROJECT_DIR$/src/Base/FrontendBundle/Resources/config/listeners.xml" />
-        <option value="$PROJECT_DIR$/src/Base/FrontendBundle/Listener/NavigationListener.php" />
+        <option value="$PROJECT_DIR$/src/Base/FrontendBundle/Controller/ProductDetailController.php" />
+        <option value="$PROJECT_DIR$/src/Base/FrontendBundle/Resources/config/routing/frontend.yml" />
         <option value="$PROJECT_DIR$/src/Base/FrontendBundle/Resources/views/HomePage/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Base/FrontendBundle/Resources/views/Template/layout.html.twig" />
+        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Entity/Product.php" />
+        <option value="$PROJECT_DIR$/src/Base/FrontendBundle/Resources/config/listeners.xml" />
         <option value="$PROJECT_DIR$/web/assets_frontend/corporate/css/style.css" />
-        <option value="$PROJECT_DIR$/web/assets_frontend/pages/css/style-shop.css" />
-        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Entity/Banner.php" />
-        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Repository/BannerRepositoryInterface.php" />
-        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Repository/Doctrine/BannerRepository.php" />
-        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/doctrine/Banner.orm.yml" />
-        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Controller/ProductController.php" />
-        <option value="$PROJECT_DIR$/src/Base/AdminBundle/BaseAdminBundleEvents.php" />
-        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Manager/BannerManager.php" />
-        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Manager/ProductManager.php" />
-        <option value="$PROJECT_DIR$/src/Base/AdminBundle/BaseAdminBundleConst.php" />
-        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Listener/Banner/UpdateBannerListener.php" />
-        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/manager.xml" />
-        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/listeners.xml" />
+        <option value="$PROJECT_DIR$/src/Base/FrontendBundle/Listener/ProductDetailListener.php" />
+        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Controller/Api/ProductController.php" />
+        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Product/list.html.twig" />
+        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Product/update.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/src/Base/AdminBundle/Controller/Api/BannerController.php" />
-        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/routing/api-routing.yml" />
-        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/routing/admin.yml" />
-        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Template/layout.html.twig" />
-        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Controller/BannerController.php" />
-        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Banner/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/controller.xml" />
         <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Banner/list.html.twig" />
         <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Banner/update.html.twig" />
-        <option value="$PROJECT_DIR$/web/assets/pages/scripts/form-validation-banner.min.js" />
-        <option value="$PROJECT_DIR$/src/Base/FrontendBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/Base/FrontendBundle/Resources/views/Widget/header.html.twig" />
-        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Service/SlugGenerator.php" />
-        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/services.xml" />
-        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Entity/Product.php" />
-        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Entity/Category.php" />
-        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/doctrine/Product.orm.yml" />
-        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/doctrine/Category.orm.yml" />
-        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/controller.xml" />
-        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Repository/Doctrine/ProductRepository.php" />
-        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Controller/Api/ProductController.php" />
-        <option value="$PROJECT_DIR$/web/assets/pages/scripts/form-validation-product.min.js" />
+        <option value="$PROJECT_DIR$/src/Base/FrontendBundle/Resources/views/Widget/banner.html.twig" />
+        <option value="$PROJECT_DIR$/src/Base/FrontendBundle/Resources/views/Widget/new_arrivals.html.twig" />
+        <option value="$PROJECT_DIR$/src/Base/FrontendBundle/Resources/views/ProductDetail/index.html.twig" />
       </list>
     </option>
   </component>
@@ -212,7 +267,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -237,80 +291,55 @@
               <item name="base-symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Base" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="AdminBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FrontendBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="base-symfony" type="b2602c69:ProjectViewProjectNode" />
               <item name="base-symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Base" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="AdminBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FrontendBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="base-symfony" type="b2602c69:ProjectViewProjectNode" />
               <item name="base-symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Base" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="AdminBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Api" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FrontendBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="base-symfony" type="b2602c69:ProjectViewProjectNode" />
               <item name="base-symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Base" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="AdminBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Manager" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FrontendBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="HomePage" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="base-symfony" type="b2602c69:ProjectViewProjectNode" />
               <item name="base-symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Base" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="AdminBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Repository" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="base-symfony" type="b2602c69:ProjectViewProjectNode" />
-              <item name="base-symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Base" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="AdminBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Repository" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Doctrine" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FrontendBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ProductDetail" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="base-symfony" type="b2602c69:ProjectViewProjectNode" />
               <item name="base-symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="base-symfony" type="b2602c69:ProjectViewProjectNode" />
-              <item name="base-symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="base-symfony" type="b2602c69:ProjectViewProjectNode" />
-              <item name="base-symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="base-symfony" type="b2602c69:ProjectViewProjectNode" />
-              <item name="base-symfony" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="scripts" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -320,12 +349,16 @@
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/uploads/banner" />
+      <recent name="$PROJECT_DIR$/web/uploads/product" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/Base/AdminBundle/Service" />
-      <recent name="$PROJECT_DIR$/web/assets/pages/scripts" />
-      <recent name="$PROJECT_DIR$/src/Base/AdminBundle/Listener" />
-      <recent name="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views" />
-      <recent name="$PROJECT_DIR$/src/Base/AdminBundle/Manager" />
+      <recent name="$PROJECT_DIR$/src/Base/FrontendBundle/Listener" />
+      <recent name="$PROJECT_DIR$/src/Base/FrontendBundle/Resources/views" />
+      <recent name="$PROJECT_DIR$/src/Base/FrontendBundle/Controller" />
+      <recent name="$PROJECT_DIR$/src/Base/FrontendBundle/Resources/views/Widget" />
+      <recent name="$PROJECT_DIR$/src/Base/AdminBundle/Twig" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -402,11 +435,23 @@
       <workItem from="1533306317310" duration="2971000" />
       <workItem from="1533394673091" duration="15943000" />
       <workItem from="1534176773178" duration="3700000" />
+      <workItem from="1534519419105" duration="8878000" />
+      <workItem from="1534777739898" duration="6219000" />
+      <workItem from="1534864275694" duration="5198000" />
+      <workItem from="1534950625870" duration="1743000" />
+      <workItem from="1535032781823" duration="7606000" />
+      <workItem from="1535081047949" duration="3000" />
+      <workItem from="1535173808853" duration="8634000" />
+      <workItem from="1535451569052" duration="8063000" />
+      <workItem from="1535819792530" duration="5771000" />
+      <workItem from="1536035615128" duration="952000" />
+      <workItem from="1536061987694" duration="20000" />
+      <workItem from="1536595701165" duration="1489000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="274022000" />
+    <option name="totallyTimeSpent" value="328598000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="832" extended-state="0" />
@@ -417,12 +462,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930514" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -444,35 +489,182 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/assets_frontend/corporate/css/themes/red.css">
+    <entry file="file://$PROJECT_DIR$/web/assets/vendors/charts/flot/jquery.flot.categories.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="58" column="7" lean-forward="false" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
+        <state relative-caret-position="417">
+          <caret line="184" column="8" lean-forward="false" selection-start-line="184" selection-start-column="8" selection-end-line="184" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets_frontend/corporate/scripts/layout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="318" column="45" lean-forward="false" selection-start-line="318" selection-start-column="45" selection-end-line="318" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Base/FrontendBundle/Controller/HomePageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Base/FrontendBundle/BaseFrontendBundleEvents.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="713">
+          <caret line="31" column="7" lean-forward="true" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Controller/AccountController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="37" column="20" lean-forward="false" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/routing/admin.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="22" column="55" lean-forward="false" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Base/FrontendBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Base/FrontendBundle/Resources/config/routing/frontend.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="28" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Base/FrontendBundle/Controller/ProductDetailController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="29" column="75" lean-forward="false" selection-start-line="29" selection-start-column="75" selection-end-line="29" selection-end-column="75" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Base/FrontendBundle/Resources/views/Template/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="31" column="157" lean-forward="false" selection-start-line="31" selection-start-column="157" selection-end-line="31" selection-end-column="157" />
+        <state relative-caret-position="3312">
+          <caret line="144" column="21" lean-forward="false" selection-start-line="144" selection-start-column="21" selection-end-line="144" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets_frontend/corporate/css/style.css">
+    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Listener/Product/UpdateProductListener.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="454" column="15" lean-forward="false" selection-start-line="454" selection-start-column="15" selection-end-line="454" selection-end-column="15" />
+        <state relative-caret-position="279">
+          <caret line="68" column="19" lean-forward="true" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Repository/Doctrine/ProductRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2967">
+          <caret line="130" column="38" lean-forward="false" selection-start-line="130" selection-start-column="38" selection-end-line="130" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Base/FrontendBundle/Resources/config/listeners.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="20" column="14" lean-forward="false" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Base/FrontendBundle/Listener/NavigationListener.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="943">
+          <caret line="44" column="42" lean-forward="false" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Entity/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="759">
+          <caret line="33" column="21" lean-forward="false" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/assets_frontend/pages/css/style-shop.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="59" column="12" lean-forward="false" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="12" />
+        <state relative-caret-position="249">
+          <caret line="400" column="26" lean-forward="false" selection-start-line="400" selection-start-column="20" selection-end-line="400" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Entity/Account.php">
+    <entry file="file://$PROJECT_DIR$/web/assets_frontend/corporate/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="568">
+          <caret line="917" column="22" lean-forward="false" selection-start-line="917" selection-start-column="22" selection-end-line="917" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Base/FrontendBundle/Listener/ProductDetailListener.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1357">
+          <caret line="65" column="21" lean-forward="false" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../kt_freebie_ecommerce/theme/shop-item.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12857">
+          <caret line="559" column="23" lean-forward="false" selection-start-line="547" selection-start-column="18" selection-end-line="559" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Base/FrontendBundle/Listener/HomePageListener.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="67" column="35" lean-forward="false" selection-start-line="67" selection-start-column="35" selection-end-line="67" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config_prod.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config_dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config_test.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppCache.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -480,308 +672,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Repository/ProductRepositoryInterface.php">
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-659">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Repository/BannerRepositoryInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/web/uploads/banner/6e30e335871aed33591cba5d6394075c.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Entity/Banner.php">
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/doctrine/Banner.orm.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="11" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Controller/CategoryController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-252">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Controller/ProductController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="34" column="7" lean-forward="false" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/BaseAdminBundleEvents.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="127" column="75" lean-forward="true" selection-start-line="127" selection-start-column="75" selection-end-line="127" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/BaseAdminBundleConst.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="31" column="42" lean-forward="true" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
+        <state relative-caret-position="276">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Product/list.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/manager.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="14" lean-forward="false" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Controller/Api/LoginController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="35" column="20" lean-forward="false" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/routing/admin.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="55" column="53" lean-forward="false" selection-start-line="55" selection-start-column="53" selection-end-line="55" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/routing/api-routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="53" column="17" lean-forward="true" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Template/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="182" column="64" lean-forward="true" selection-start-line="182" selection-start-column="64" selection-end-line="182" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Controller/BannerController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
-          <folding>
-            <element signature="e#681#721#1#PHP" expanded="true" />
-            <element signature="e#1070#1111#1#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/pages/scripts/portlet-ajax.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-779">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Banner/list.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="34" lean-forward="true" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Banner/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1566">
-          <caret line="102" column="15" lean-forward="true" selection-start-line="102" selection-start-column="15" selection-end-line="102" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Repository/Doctrine/BannerRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1716">
-          <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
-          <folding>
-            <element signature="e#56#91#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Manager/BannerManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="82" column="6" lean-forward="true" selection-start-line="82" selection-start-column="6" selection-end-line="82" selection-end-column="6" />
-          <folding>
-            <element signature="e#44#79#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Listener/Banner/UpdateBannerListener.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="943">
-          <caret line="46" column="5" lean-forward="false" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
-          <folding>
-            <element signature="e#52#87#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Controller/Api/BannerController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1426">
-          <caret line="69" column="41" lean-forward="false" selection-start-line="69" selection-start-column="41" selection-end-line="69" selection-end-column="41" />
-          <folding>
-            <element signature="e#51#93#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/pages/scripts/form-validation-banner.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Banner/update.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1564">
-          <caret line="68" column="85" lean-forward="false" selection-start-line="68" selection-start-column="85" selection-end-line="68" selection-end-column="85" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/FrontendBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="14" lean-forward="true" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/FrontendBundle/Resources/config/routing/api-routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/FrontendBundle/Resources/views/Widget/header.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/services.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Service/SlugGenerator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="22" column="15" lean-forward="true" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Service/GetCategoryTree.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Service/FileUploader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="257">
+          <caret line="31" column="47" lean-forward="false" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Entity/Product.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="81" column="8" lean-forward="false" selection-start-line="81" selection-start-column="8" selection-end-line="82" selection-end-column="27" />
+        <state relative-caret-position="231">
+          <caret line="200" column="20" lean-forward="false" selection-start-line="200" selection-start-column="20" selection-end-line="200" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Entity/Category.php">
+    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Product/update.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="63" column="27" lean-forward="true" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
+        <state relative-caret-position="134">
+          <caret line="36" column="47" lean-forward="false" selection-start-line="36" selection-start-column="47" selection-end-line="36" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/doctrine/Product.orm.yml">
+    <entry file="file://$PROJECT_DIR$/web/uploads/product/d4df0840210b2fc5bc644f5e43b86ba5.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/uploads/product/46c18e781da8be1e0cd8b3dd282297ed.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/uploads/product/de29fa366331c3b1edea390215cb64be.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/uploads/product/ee7ee26764a54e7a20cae94dace7e9e8.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/uploads/product/7cc3da6c24d4c781858b81913678c146.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="18" selection-end-column="24" />
+        <state relative-caret-position="146">
+          <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/doctrine/Category.orm.yml">
+    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Service/FileUploader.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+        <state relative-caret-position="302">
+          <caret line="53" column="5" lean-forward="false" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Listener/Product/UpdateProductListener.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-871">
-          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Listener/Category/UpdateCategoryListener.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-894">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Repository/Doctrine/AccountRepository.php">
+    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Controller/Api/BaseController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -789,69 +773,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/controller.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="38" column="4" lean-forward="false" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/listeners.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Controller/Api/BaseController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="55" column="20" lean-forward="false" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Manager/ProductManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="85" column="20" lean-forward="false" selection-start-line="85" selection-start-column="20" selection-end-line="85" selection-end-column="20" />
-          <folding>
-            <element signature="e#44#80#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Repository/Doctrine/CategoryRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="51" column="41" lean-forward="false" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Repository/Doctrine/ProductRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="64" column="38" lean-forward="false" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Controller/Api/ProductController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="68" column="18" lean-forward="false" selection-start-line="68" selection-start-column="18" selection-end-line="68" selection-end-column="18" />
+        <state relative-caret-position="258">
+          <caret line="61" column="4" lean-forward="false" selection-start-line="61" selection-start-column="4" selection-end-line="67" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/pages/scripts/form-validation-product.min.js">
+    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Controller/Api/BannerController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="87" column="13" lean-forward="false" selection-start-line="87" selection-start-column="13" selection-end-line="87" selection-end-column="13" />
+        <state relative-caret-position="230">
+          <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="22" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/controller.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="50" column="15" lean-forward="false" selection-start-line="50" selection-start-column="15" selection-end-line="50" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Banner/list.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="38" column="21" lean-forward="false" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Banner/update.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="79" column="55" lean-forward="false" selection-start-line="79" selection-start-column="55" selection-end-line="79" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Base/FrontendBundle/Resources/views/HomePage/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Base/FrontendBundle/Resources/views/Widget/banner.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="59" lean-forward="false" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Base/FrontendBundle/Resources/views/Widget/header.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="39" lean-forward="true" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Base/FrontendBundle/Resources/views/Widget/new_arrivals.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="57" column="67" lean-forward="false" selection-start-line="57" selection-start-column="67" selection-end-line="57" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Base/FrontendBundle/Resources/views/ProductDetail/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="42" column="82" lean-forward="false" selection-start-line="42" selection-start-column="82" selection-end-line="42" selection-end-column="82" />
+          <folding>
+            <element signature="e#1366#1388#0#HTML" expanded="true" />
+            <element signature="e#4174#4308#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

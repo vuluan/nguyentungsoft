@@ -52,6 +52,11 @@ class CategoryRepository extends Repository implements CategoryRepositoryInterfa
                 ->setParameter('name', '%' . $criteria['name'] . '%');
         }
 
+        if (!empty($criteria['slug'])) {
+            $queryBuilder->andWhere('c.slug = :slug')
+                ->setParameter('slug', $criteria['slug']);
+        }
+
         if (isset($criteria['parentId'])) {
             $queryBuilder->andWhere('c.parentId = :parentId')
                 ->setParameter('parentId', $criteria['parentId']);

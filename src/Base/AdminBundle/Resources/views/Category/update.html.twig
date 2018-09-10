@@ -37,7 +37,7 @@
                 </div>
                 <div class="portlet-body">
                     <!-- BEGIN FORM-->
-                    <form action="#" id="formCategory" name="formCategory" class="form-horizontal" novalidate="novalidate">
+                    <form action="{{ path('base_admin_ajax_update_category') }}" id="formCategory" method="POST" name="formCategory" class="form-horizontal" novalidate="novalidate">
                         <input type="hidden" name="formCategory[id]" id="categoryId" value="{{ category is defined ? category.id : '0' }}">
                         <div class="form-body">
                             <div class="alert alert-danger display-hide">
@@ -76,6 +76,34 @@
                                             <option {{ category is defined ? category.parentId == parent.id ? 'selected="selected"' : '' : '' }} value="{{ parent.id }}">{{ parent.name }}</option>
                                         {% endfor %}
                                     </select>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="form-group  margin-top-20">
+                                <label class="control-label col-md-3">SEO Title</label>
+                                <div class="col-md-4">
+                                    <div class="input-icon right">
+                                        <i class="fa"></i>
+                                        <input title="" class="form-control" value="{{ category is defined ? category.seoTitle : '' }}" name="formCategory[seoTitle]">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group  margin-top-20">
+                                <label class="control-label col-md-3">SEO Description</label>
+                                <div class="col-md-4">
+                                    <div class="input-icon right">
+                                        <i class="fa"></i>
+                                        <input title="" class="form-control" value="{{ category is defined ? category.seoDescription : '' }}" name="formCategory[seoDescription]">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group  margin-top-20">
+                                <label class="control-label col-md-3">SEO Keyword</label>
+                                <div class="col-md-4">
+                                    <div class="input-icon right">
+                                        <i class="fa"></i>
+                                        <input title="" class="form-control" value="{{ category is defined ? category.seoKeyword : '' }}" name="formCategory[seoKeyword]">
+                                    </div>
                                 </div>
                             </div>
                         </div>

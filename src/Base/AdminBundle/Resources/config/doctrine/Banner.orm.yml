@@ -4,8 +4,8 @@ Base\AdminBundle\Entity\Banner:
     repositoryClass: Base\AdminBundle\Repository\Doctrine\BannerRepository
     id:
         id:
-            type: integer
-            generator: { strategy: AUTO }
+            type: string
+            length: 255
     fields:
         name:
             type: string

@@ -4,8 +4,8 @@ Base\AdminBundle\Entity\Account:
     repositoryClass: Base\AdminBundle\Repository\Doctrine\AccountRepository
     id:
         id:
-            type: integer
-            generator: { strategy: AUTO }
+            type: string
+            length: 255
     fields:
         name:
             type: string

@@ -915,7 +915,7 @@ Sidebar
     top: 0;
     left: 0;
     z-index: 1000;
-    font: 15px 'PT Sans Narrow', sans-serif;
+    font: 15px 'Roboto', sans-serif;
 }
 
 .sidebar .dropdown-menu:after,

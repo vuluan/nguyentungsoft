@@ -40,8 +40,7 @@ Header and header elements
 	position: inherit;
 }
 .ecommerce .site-logo {
-	padding-top: 33px;
-	padding-bottom: 33px;
+	padding: 29px 0;
 }
 .ecommerce .reduce-header .site-logo {
 	padding-top: 16px;
@@ -49,7 +48,7 @@ Header and header elements
 }
 
 .ecommerce .header-navigation li.menu-search {
-	top: 31px;
+	top: 26px;
 }
 .ecommerce .header-navigation li.menu-search i {
 	color: #8a949e;
@@ -63,6 +62,7 @@ Header and header elements
 .ecommerce .header-navigation > ul > li > a {
 	color: #767f88;
 	padding: 34px 12px 32px;
+	font-size: 14px;
 }
 .ecommerce .header-navigation ul > li.active > a,
 .ecommerce .header-navigation ul > li > a:hover,
@@ -330,6 +330,9 @@ Header and header elements
 .owl-item.active .product-item {
 	margin-right: 10px;
 }
+.owl-item.active .product-item .product-item-price {
+	overflow: auto;
+}
 .product-item:hover {
 	box-shadow: 5px 5px rgba(234, 234, 234, 0.9);
 }
@@ -411,11 +414,18 @@ Header and header elements
 	float: left;
 	padding-top: 1px;
 }
+.product-item .pi-price-remove {
+	color: #3e3e3e;
+	font: 14px 'Roboto', sans-serif;
+	text-decoration: line-through;
+}
 .product-item .add2cart {
 	float: right;
 	color: #a8aeb3;
 	border: 1px #ededed solid;
 	padding: 3px 6px;
+	margin-top: 10px;
+	width: 100%;
 }
 .product-item .add2cart:hover {
 	color: #fff !important;

@@ -7,7 +7,9 @@ imports:
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
     locale: en
-    avatar_directory: '%kernel.project_dir%/web/uploads/avatar'
+    upload_path: '%kernel.project_dir%/web'
+    product_directory: '/uploads/product/'
+    banner_directory: '/uploads/banner/'
 
 framework:
     #esi: ~
@@ -38,6 +40,9 @@ framework:
 twig:
     debug: '%kernel.debug%'
     strict_variables: '%kernel.debug%'
+    globals:
+        product_directory: '%product_directory%'
+        banner_directory: '%banner_directory%'
     paths:
         '%kernel.project_dir%/src/Base/AdminBundle/Resources/views': BaseAdminBundle
 

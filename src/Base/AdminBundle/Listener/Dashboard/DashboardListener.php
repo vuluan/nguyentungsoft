@@ -3,6 +3,7 @@
 namespace Base\AdminBundle\Listener\Dashboard;
 
 use Base\AdminBundle\Manager\AccountManager;
+use Base\AdminBundle\Manager\BannerManager;
 use Base\AdminBundle\Manager\CategoryManager;
 use Base\AdminBundle\Manager\ProductManager;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
@@ -31,19 +32,27 @@ class DashboardListener implements EventSubscriberInterface
     private $productManager;
 
     /**
+     * @var BannerManager
+     */
+    private $bannerManager;
+
+    /**
      * DashboardListener constructor.
      * @param AccountManager $accountManager
      * @param CategoryManager $categoryManager
      * @param ProductManager $productManager
+     * @param BannerManager $bannerManager
      */
     public function __construct(
         AccountManager $accountManager,
         CategoryManager $categoryManager,
-        ProductManager $productManager
+        ProductManager $productManager,
+        BannerManager $bannerManager
     ) {
         $this->accountManager = $accountManager;
         $this->categoryManager = $categoryManager;
         $this->productManager = $productManager;
+        $this->bannerManager = $bannerManager;
     }
 
     /**
@@ -68,8 +77,10 @@ class DashboardListener implements EventSubscriberInterface
         $allAccount = $this->accountManager->findByNotPaging($criteria, '');
         $allCategory = $this->categoryManager->findByNotPaging($criteria, '');
         $allProduct = $this->productManager->findByNotPaging($criteria, '');
+        $allBanner = $this->bannerManager->findByNotPaging($criteria, '');
         $event->setParameter('countAccount', count($allAccount));
         $event->setParameter('countCategory', count($allCategory));
         $event->setParameter('countProduct', count($allProduct));
+        $event->setParameter('countBanner', count($allBanner));
     }
 }
