@@ -411,7 +411,7 @@ Header and header elements
 .pi-price {
 	color: #e84d1c;
 	font: 18px 'Roboto', sans-serif;
-	float: left;
+	/*float: left;*/
 	padding-top: 1px;
 }
 .product-item .pi-price-remove {
@@ -920,7 +920,7 @@ div.radio.disabled span.checked, div.radio.disabled.active span.checked {
 	margin-bottom: 17px;
 }
 .price-availability-block .price {
-	float: left;
+	/*float: left;*/
 	font-family: 'Roboto', sans-serif;
 }
 .price-availability-block .price strong {

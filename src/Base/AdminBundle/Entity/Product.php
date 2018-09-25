@@ -127,7 +127,6 @@ class Product
         $this->setPrice(0);
         $this->setSalePrice(0);
         $this->setCategoryId(0);
-        $this->setCategory(null);
         $this->setSubImages("");
     }
 

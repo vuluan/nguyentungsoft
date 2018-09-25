@@ -90,14 +90,14 @@
                 {# root \Base\AdminBundle\Entity\Category #}
                 {% for root in categoryTree %}
                     <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+                        <a class="dropdown-toggle" href="{{ root.linkDetail }}">
                             {{ root.name }}
                         </a>
                         {% if root.children | length > 0 %}
                             <ul class="dropdown-menu">
                                 {# child \Base\AdminBundle\Entity\Category #}
                                 {% for child in root.children %}
-                                    <li><a href="#">{{ child.name }}</a></li>
+                                    <li><a href="{{ root.linkDetail }}">{{ child.name }}</a></li>
                                 {% endfor %}
                             </ul>
                         {% endif %}
@@ -110,10 +110,10 @@
                     <div class="search-box">
                         <form action="#">
                             <div class="input-group">
-                                <input type="text" placeholder="Search" class="form-control">
+                                <input type="text" placeholder="Tìm Kiếm" class="form-control">
                                 <span class="input-group-btn">
-                      <button class="btn btn-primary" type="submit">Search</button>
-                    </span>
+                                    <button class="btn btn-primary" type="submit">Tìm Kiếm</button>
+                                </span>
                             </div>
                         </form>
                     </div>

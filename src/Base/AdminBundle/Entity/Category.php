@@ -136,6 +136,14 @@ class Category
     /**
      * @return string
      */
+    public function getLinkDetail(): string
+    {
+        return sprintf("%s", $this->getSlug());
+    }
+
+    /**
+     * @return string
+     */
     public function getParentId(): string
     {
         return $this->parentId;

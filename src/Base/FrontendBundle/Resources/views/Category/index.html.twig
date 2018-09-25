@@ -1,0 +1,83 @@
+{% extends '@BaseFrontend/Template/layout.html.twig' %}
+
+{% block body %}
+    {# selectedCategory \Base\AdminBundle\Entity\Category #}
+    <div class="title-wrapper">
+        <div class="container">
+            <div class="container-inner">
+                <h1>{{ selectedCategory.name }}</h1>
+                <em>Có {{ products['total'] }} sản phẩm</em>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li><a href="{{ path('base_frontend_homepage') }}">Trang Chủ</a></li>
+                <li class="active">{{ selectedCategory.name }}</li>
+            </ul>
+            <!-- BEGIN SIDEBAR & CONTENT -->
+            <div class="row margin-bottom-40">
+                <!-- BEGIN SIDEBAR -->
+                <div class="sidebar col-md-3 col-sm-5">
+                    {% if categoryTree | length > 0 %}
+                        <ul class="list-group margin-bottom-25 sidebar-menu">
+                            {# sidebarCate \Base\AdminBundle\Entity\Category #}
+                            {% for sidebarCate in categoryTree %}
+                                <li class="list-group-item clearfix dropdown">
+                                    <a href="{{ sidebarCate.getLinkDetail }}" class="collapsed">
+                                        <i class="fa fa-angle-right"></i>
+                                        {{ sidebarCate.name }}
+                                    </a>
+                                    {% if sidebarCate.children | length > 0 %}
+                                        <ul class="dropdown-menu" style="display:block;">
+                                            {% for sidebarCateChild in sidebarCate.children %}
+                                                <li><a href=""><i class="fa fa-angle-right"></i>{{ sidebarCateChild.name }}</a></li>
+                                            {% endfor %}
+                                        </ul>
+                                    {% endif %}
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                </div>
+                <!-- END SIDEBAR -->
+                <!-- BEGIN CONTENT -->
+                <div class="col-md-9 col-sm-7">
+                    <!-- BEGIN PRODUCT LIST -->
+                    {% if products['total'] %}
+                        {# productItem \Base\AdminBundle\Entity\Product #}
+                        {% for productItem in products['items'] %}
+                            {% if loop.index == 1 or (loop.index - 1) % 3 == 0 %}
+                                <div class="row product-list">
+                            {% endif %}
+                            <!-- PRODUCT ITEM START -->
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                {% include 'BaseFrontendBundle:Widget:product_item.html.twig'
+                                with {
+                                    slug: 'product-list',  product: productItem,
+                                    imgWidth: 250,
+                                    imgHeight: 250
+                                }
+                                %}
+                            </div>
+                            <!-- PRODUCT ITEM END -->
+                            {% if loop.index % 3 == 0 or products['items'] | length == loop.index %}
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    {% endif %}
+                    {{ paginationView | raw }}
+                </div>
+                <!-- END CONTENT -->
+            </div>
+            <!-- END SIDEBAR & CONTENT -->
+        </div>
+    </div>
+    {% if products['total'] > 0 %}
+        {% for productItem in products['items'] %}
+            {% include 'BaseFrontendBundle:Widget:product_popup.html.twig' with { slug: 'product-list',  product: productItem } %}
+        {% endfor %}
+    {% endif %}
+{% endblock %}
+

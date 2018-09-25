@@ -1,0 +1,44 @@
+<!-- BEGIN fast view of a product -->
+<div id="{{ slug }}-{{ product.id }}" style="display: none; width: 700px;">
+    <div class="product-page product-pop-up">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-3">
+                <div class="product-main-image">
+                    <img src="{{ absolute_url(asset(product_directory ~ product.mainImage)) }}" alt="{{ product.name }}" class="img-responsive">
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-9">
+                <h2>{{ product.name }}</h2>
+                <div class="price-availability-block clearfix">
+                    {% if product.price != product.salePrice %}
+                        <div class="price">
+                            <em><span>{{ formatCurrency(product.price) }}</span></em>
+                        </div>
+                    {% endif %}
+                    <div class="price">
+                        <strong>{{ formatCurrency(product.salePrice) }}</strong>
+                    </div>
+                </div>
+                <div class="description">
+                    <p>
+                        {{ product.description | striptags | length > 200 ? product.description | striptags | slice(0, 200) ~ "..." : product.description | striptags }}
+                    </p>
+                </div>
+                <div class="product-page-cart">
+                    <div class="product-quantity">
+                        <input id="product-quantity" type="text" value="1" readonly name="product-quantity" class="form-control input-sm">
+                    </div>
+                    <button class="btn btn-primary" type="submit">Thêm vào giỏ hàng</button>
+                    <a href="{{ path('base_frontend_product_detail', {'slug': product.linkDetail }) }}" class="btn btn-default">Xem Chi Tiết</a>
+                </div>
+            </div>
+            {% if product.newStatus %}
+                <div class="sticker sticker-new"></div>
+            {% endif %}
+            {% if product.saleStatus %}
+                <div class="sticker sticker-sale"></div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+<!-- END fast view of a product -->

@@ -6,34 +6,8 @@
         <div class="col-md-12 sale-product">
             <h2>Hàng mới về</h2>
             <div class="owl-carousel owl-carousel5">
-                {% for newArrivalProduct in products['items'] %}
-                    <div class="jQueryEqualHeight">
-                        <div class="product-item">
-                            <div class="pi-img-wrapper">
-                                <img src="{{ resizeImage(product_directory ~ newArrivalProduct.mainImage, 200, 250) }}" class="img-responsive" alt="{{ newArrivalProduct.name }}">
-                                <div>
-                                    <a href="{{ absolute_url(asset(product_directory ~ newArrivalProduct.mainImage)) }}" class="btn btn-default fancybox-button">Phóng</a>
-                                    <a href="#new-arrival-{{ newArrivalProduct.id }}" class="btn btn-default fancybox-fast-view">Xem nhanh</a>
-                                </div>
-                            </div>
-                            <h3 class="product-item-title"><a href="{{ path('base_frontend_product_detail', {'slug': newArrivalProduct.linkDetail }) }}">{{ newArrivalProduct.name }}</a></h3>
-                            <div class="product-item-price">
-                                {% if newArrivalProduct.price != newArrivalProduct.salePrice %}
-                                    <div class="pi-price pi-price-remove">{{ formatCurrency(newArrivalProduct.price) }}</div>
-                                {% endif %}
-                                <div class="pi-price">{{ formatCurrency(newArrivalProduct.salePrice) }}</div>
-                            </div>
-                            <div class="product-item-add2cart">
-                                <a href="javascript:;" class="btn btn-default add2cart">Thêm vào giỏ hàng</a>
-                            </div>
-                            {% if newArrivalProduct.newStatus %}
-                                <div class="sticker sticker-new"></div>
-                            {% endif %}
-                            {% if newArrivalProduct.saleStatus %}
-                                <div class="sticker sticker-sale"></div>
-                            {% endif %}
-                        </div>
-                    </div>
+                {% for newArrivalProduct in products['items'] | slice(0,5) %}
+                    {% include 'BaseFrontendBundle:Widget:product_item.html.twig' with { slug: 'new-arrival',  product: newArrivalProduct } %}
                 {% endfor %}
             </div>
         </div>
@@ -44,49 +18,6 @@
 
 {% if products['total'] > 0 %}
     {% for newArrivalProduct in products['items'] %}
-    <!-- BEGIN fast view of a product -->
-    <div id="new-arrival-{{ newArrivalProduct.id }}" style="display: none; width: 700px;">
-        <div class="product-page product-pop-up">
-            <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-3">
-                    <div class="product-main-image">
-                    <img src="{{ absolute_url(asset(product_directory ~ newArrivalProduct.mainImage)) }}" alt="{{ newArrivalProduct.name }}" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-6 col-xs-9">
-                    <h2>{{ newArrivalProduct.name }}</h2>
-                    <div class="price-availability-block clearfix">
-                        {% if newArrivalProduct.price != newArrivalProduct.salePrice %}
-                            <div class="price">
-                                <em><span>{{ formatCurrency(newArrivalProduct.price) }}</span></em>
-                            </div>
-                        {% endif %}
-                        <div class="price">
-                            <strong>{{ formatCurrency(newArrivalProduct.salePrice) }}</strong>
-                        </div>
-                    </div>
-                    <div class="description">
-                        <p>
-                            {{ newArrivalProduct.description | striptags | length > 200 ? newArrivalProduct.description | striptags | slice(0, 200) ~ "..." : newArrivalProduct.description | striptags }}
-                        </p>
-                    </div>
-                    <div class="product-page-cart">
-                        <div class="product-quantity">
-                            <input id="product-quantity" type="text" value="1" readonly name="product-quantity" class="form-control input-sm">
-                        </div>
-                        <button class="btn btn-primary" type="submit">Thêm vào giỏ hàng</button>
-                        <a href="{{ path('base_frontend_product_detail', {'slug': newArrivalProduct.linkDetail }) }}" class="btn btn-default">Xem Chi Tiết</a>
-                    </div>
-                </div>
-                {% if newArrivalProduct.newStatus %}
-                    <div class="sticker sticker-new"></div>
-                {% endif %}
-                {% if newArrivalProduct.saleStatus %}
-                    <div class="sticker sticker-sale"></div>
-                {% endif %}
-            </div>
-        </div>
-    </div>
-    <!-- END fast view of a product -->
+        {% include 'BaseFrontendBundle:Widget:product_popup.html.twig' with { slug: 'new-arrival',  product: newArrivalProduct } %}
     {% endfor %}
 {% endif %}

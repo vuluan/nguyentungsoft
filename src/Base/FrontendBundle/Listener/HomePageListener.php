@@ -62,7 +62,7 @@ class HomePageListener implements EventSubscriberInterface
             'removedRecord' => false,
             'active' => true,
         ];
-        $products = $this->productManager->findBy($criteria, 1, 10,'');
+        $products = $this->productManager->findBy($criteria, 1, 20,'');
 
         $event->setParameter('banners', $banners);
         $event->setParameter('products', $products);

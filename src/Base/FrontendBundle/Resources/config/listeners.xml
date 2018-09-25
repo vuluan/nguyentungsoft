@@ -19,5 +19,13 @@
         <argument id="base_admin.manager.category_manager" type="service"/>
         <tag name="kernel.event_subscriber"/>
     </service>
+
+    <service class="Base\FrontendBundle\Listener\CategoryListener" id="base_frontend.listener.category_listener">
+        <argument id="base_admin.manager.product_manager" type="service"/>
+        <argument id="base_admin.manager.category_manager" type="service"/>
+        <argument id="Base\AdminBundle\Pagination\PaginationHelper" type="service"/>
+        <tag name="kernel.event_subscriber"/>
+    </service>
+
 </services>
 </container>

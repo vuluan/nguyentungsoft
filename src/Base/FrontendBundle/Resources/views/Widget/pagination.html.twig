@@ -1,0 +1,24 @@
+<!-- BEGIN PAGINATOR -->
+<div class="row">
+    <div class="col-md-4 col-sm-4 items-info">Items {{ (paginator.currentPage - 1) * paginator.perPage + 1 }} to {{ paginator.currentPage * paginator.perPage > paginator.total ? paginator.total : paginator.currentPage * paginator.perPage }} of {{ paginator.total }} total</div>
+    {% if paginator.totalPage > 1 %}
+    <div class="col-md-8 col-sm-8">
+        <ul class="pagination pull-right">
+            {% if paginator.currentPage > 1 %}
+                <li><a href="{{ paginator.url(paginator.currentPage - 1) }}">«</a></li>
+            {% endif %}
+            {% for page in 1..paginator.totalPage %}
+                {% if page == paginator.currentPage %}
+                    <li><span>{{ page }}</span></li>
+                {% else %}
+                    <li><a href="{{ paginator.url(page) }}">{{ page }}</a></li>
+                {% endif %}
+            {% endfor %}
+            {% if paginator.currentPage < paginator.totalPage %}
+                <li><a href="{{ paginator.url(paginator.currentPage + 1) }}">»</a></li>
+            {% endif %}
+        </ul>
+    </div>
+    {% endif %}
+</div>
+<!-- END PAGINATOR -->

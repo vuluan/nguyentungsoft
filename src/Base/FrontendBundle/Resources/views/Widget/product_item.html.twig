@@ -1,0 +1,29 @@
+{% set imageWidth = imgWidth ?? 200 %}
+{% set imageHeight = imgHeight ?? 250 %}
+<div class="jQueryEqualHeight">
+    <div class="product-item">
+        <div class="pi-img-wrapper">
+            <img src="{{ resizeImage(product_directory ~ product.mainImage, imageWidth, imageHeight) }}" class="img-responsive" alt="{{ product.name }}">
+            <div>
+                <a href="{{ absolute_url(asset(product_directory ~ product.mainImage)) }}" class="btn btn-default fancybox-button">Phóng</a>
+                <a href="#{{ slug }}-{{ product.id }}" class="btn btn-default fancybox-fast-view">Xem nhanh</a>
+            </div>
+        </div>
+        <h3 class="product-item-title"><a href="{{ path('base_frontend_product_detail', {'slug': product.linkDetail }) }}">{{ product.name }}</a></h3>
+        <div class="product-item-price">
+            {% if product.price != product.salePrice %}
+                <div class="pi-price pi-price-remove">{{ formatCurrency(product.price) }}</div>
+            {% endif %}
+            <div class="pi-price">{{ formatCurrency(product.salePrice) }}</div>
+        </div>
+        <div class="product-item-add2cart">
+            <a href="javascript:;" class="btn btn-default add2cart">Thêm vào giỏ hàng</a>
+        </div>
+        {% if product.newStatus %}
+            <div class="sticker sticker-new"></div>
+        {% endif %}
+        {% if product.saleStatus %}
+            <div class="sticker sticker-sale"></div>
+        {% endif %}
+    </div>
+</div>
