@@ -1,0 +1,29 @@
+version: '3'
+services:
+    nguyentung_mysql:
+        container_name: nguyentung_mysql
+        build:
+            context: mysql
+        environment:
+            - MYSQL_ROOT_PASSWORD=admin
+        command: mysqld --sql-mode=""
+        ports:
+            - "3306:3306"
+        volumes:
+            - "./mysql/entrypoint-scripts-local/:/docker-entrypoint-initdb.d/"
+    nguyentung_web:
+        container_name: nguyentung_web
+        build:
+            context: web
+        ports:
+            - "80:80"
+        volumes:
+            - "../:/var/www/html/base-symfony"
+            - "./web/config_local/base-symfony.conf:/etc/apache2/sites-enabled/base-symfony.conf"
+            - "./web/config_local/cacert.pem:/var/www/html/cacert.pem"
+        entrypoint:
+            - /docker-entrypoint.sh
+        links:
+            - nguyentung_mysql:mtmg-db
+        depends_on:
+            - nguyentung_mysql

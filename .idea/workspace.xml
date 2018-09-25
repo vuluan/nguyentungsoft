@@ -2,30 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31e5aee8-8a52-4d9b-b120-70a2dec6b8fd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Base/FrontendBundle/Controller/CategoryController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Base/FrontendBundle/Listener/CategoryListener.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Base/FrontendBundle/Resources/views/Category/index.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Base/FrontendBundle/Resources/views/Widget/pagination.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Base/FrontendBundle/Resources/views/Widget/product_item.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Base/FrontendBundle/Resources/views/Widget/product_popup.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/base-symfony.iml" afterPath="$PROJECT_DIR$/.idea/base-symfony.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/symfony2.xml" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/db_base_symfony.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deployment/bin/clear.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deployment/bin/prod-setup.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deployment/bin/setup.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deployment/docker-compose.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deployment/mysql/Dockerfile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deployment/mysql/entrypoint-scripts-local/createDB.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deployment/web/Dockerfile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deployment/web/config_local/base-symfony.conf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deployment/web/config_local/cacert.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deployment/web/docker-entrypoint.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Entity/Category.php" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Entity/Category.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Entity/Product.php" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Entity/Product.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Banner/update.html.twig" afterPath="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Banner/update.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/FrontendBundle/BaseFrontendBundleConst.php" afterPath="$PROJECT_DIR$/src/Base/FrontendBundle/BaseFrontendBundleConst.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/FrontendBundle/BaseFrontendBundleEvents.php" afterPath="$PROJECT_DIR$/src/Base/FrontendBundle/BaseFrontendBundleEvents.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/FrontendBundle/Listener/HomePageListener.php" afterPath="$PROJECT_DIR$/src/Base/FrontendBundle/Listener/HomePageListener.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/FrontendBundle/Resources/config/listeners.xml" afterPath="$PROJECT_DIR$/src/Base/FrontendBundle/Resources/config/listeners.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/FrontendBundle/Resources/config/routing/frontend.yml" afterPath="$PROJECT_DIR$/src/Base/FrontendBundle/Resources/config/routing/frontend.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/FrontendBundle/Resources/views/HomePage/index.html.twig" afterPath="$PROJECT_DIR$/src/Base/FrontendBundle/Resources/views/HomePage/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/FrontendBundle/Resources/views/ProductDetail/index.html.twig" afterPath="$PROJECT_DIR$/src/Base/FrontendBundle/Resources/views/ProductDetail/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/FrontendBundle/Resources/views/Template/layout.html.twig" afterPath="$PROJECT_DIR$/src/Base/FrontendBundle/Resources/views/Template/layout.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/FrontendBundle/Resources/views/Widget/header.html.twig" afterPath="$PROJECT_DIR$/src/Base/FrontendBundle/Resources/views/Widget/header.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Base/FrontendBundle/Resources/views/Widget/new_arrivals.html.twig" afterPath="$PROJECT_DIR$/src/Base/FrontendBundle/Resources/views/Widget/new_arrivals.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets_frontend/corporate/css/style.css" afterPath="$PROJECT_DIR$/web/assets_frontend/corporate/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets_frontend/pages/css/style-shop.css" afterPath="$PROJECT_DIR$/web/assets_frontend/pages/css/style-shop.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,30 +24,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CategoryListener.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Base/FrontendBundle/Listener/CategoryListener.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="74" column="67" lean-forward="true" selection-start-line="74" selection-start-column="67" selection-end-line="74" selection-end-column="67" />
-              <folding>
-                <element signature="e#48#85#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseFrontendBundleConst.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Base/FrontendBundle/BaseFrontendBundleConst.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -123,8 +88,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/config/listeners.xml" />
-        <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Account/update.html.twig" />
         <option value="$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Template/layout.html.twig" />
         <option value="$PROJECT_DIR$/src/Base/AdminBundle/Repository/Doctrine/CategoryRepository.php" />
         <option value="$PROJECT_DIR$/src/Base/AdminBundle/Service/SlugGenerator.php" />
@@ -174,6 +137,8 @@
         <option value="$PROJECT_DIR$/src/Base/FrontendBundle/Resources/views/Category/index.html.twig" />
         <option value="$PROJECT_DIR$/web/assets_frontend/corporate/css/style.css" />
         <option value="$PROJECT_DIR$/src/Base/FrontendBundle/BaseFrontendBundleConst.php" />
+        <option value="$PROJECT_DIR$/deployment/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/deployment/mysql/entrypoint-scripts-local/createDB.sh" />
       </list>
     </option>
   </component>
@@ -227,86 +192,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="base-symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="base-symfony" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="base-symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="base-symfony" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Base" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FrontendBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="base-symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="base-symfony" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Base" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FrontendBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Listener" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="base-symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="base-symfony" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Base" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -325,11 +210,11 @@
       <recent name="$PROJECT_DIR$/web/uploads/product" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/database" />
+      <recent name="$PROJECT_DIR$/deployment/web" />
+      <recent name="$PROJECT_DIR$/deployment" />
       <recent name="$PROJECT_DIR$/src/Base/FrontendBundle/Listener" />
       <recent name="$PROJECT_DIR$/src/Base/FrontendBundle/Resources/views" />
-      <recent name="$PROJECT_DIR$/src/Base/FrontendBundle/Resources/views/ProductDetail" />
-      <recent name="$PROJECT_DIR$/src/Base/FrontendBundle/Controller" />
-      <recent name="$PROJECT_DIR$/src/Base/FrontendBundle/Resources/views/Widget" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -489,18 +374,17 @@
       <workItem from="1536595701165" duration="1963000" />
       <workItem from="1536836833577" duration="754000" />
       <workItem from="1537103442299" duration="9388000" />
-      <workItem from="1537511159349" duration="8958000" />
+      <workItem from="1537511159349" duration="10437000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="348172000" />
+    <option name="totallyTimeSpent" value="349651000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="829" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3513889" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3513889" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930514" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -532,45 +416,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-659">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/uploads/banner/6e30e335871aed33591cba5d6394075c.jpeg" />
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Base/AdminBundle/Resources/views/Product/update.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="36" column="47" lean-forward="false" selection-start-line="36" selection-start-column="47" selection-end-line="36" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/uploads/product/d4df0840210b2fc5bc644f5e43b86ba5.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/uploads/product/46c18e781da8be1e0cd8b3dd282297ed.jpeg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/uploads/product/de29fa366331c3b1edea390215cb64be.jpeg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -901,7 +746,7 @@
     <entry file="file://$PROJECT_DIR$/src/Base/FrontendBundle/Listener/CategoryListener.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
-          <caret line="74" column="67" lean-forward="true" selection-start-line="74" selection-start-column="67" selection-end-line="74" selection-end-column="67" />
+          <caret line="74" column="67" lean-forward="false" selection-start-line="74" selection-start-column="67" selection-end-line="74" selection-end-column="67" />
           <folding>
             <element signature="e#48#85#0#PHP" expanded="true" />
           </folding>
@@ -911,7 +756,63 @@
     <entry file="file://$PROJECT_DIR$/src/Base/FrontendBundle/BaseFrontendBundleConst.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/bin/setup.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/bin/clear.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/web/config_local/cacert.pem">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/bin/prod-setup.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/mysql/entrypoint-scripts-local/createDB.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="94" lean-forward="true" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/db_base_symfony.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="12" column="76" lean-forward="true" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="76" />
           <folding />
         </state>
       </provider>
