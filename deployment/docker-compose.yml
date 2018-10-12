@@ -11,6 +11,7 @@ services:
             - "3306:3306"
         volumes:
             - "./mysql/entrypoint-scripts-local/:/docker-entrypoint-initdb.d/"
+            - "../:/var/www/html/base-symfony"
     nguyentung_web:
         container_name: nguyentung_web
         build:
